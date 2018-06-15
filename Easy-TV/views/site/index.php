@@ -278,7 +278,7 @@ $this->title = 'Easy-TV';
                 <h1>Отзывы наших клиентов</h1>
             </div>
 
-            <div class="col-md-4 feed d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 feed d-flex justify-content-center">
                 <div class="feed-content">
                     <img src="img/feedback/left-quote-mark.png">
                     <p style="margin: 15px 0;">Замечательный сервис. Нравится огромный диапазон каналов.
@@ -287,7 +287,7 @@ $this->title = 'Easy-TV';
                     <p class="signature">Алексей Т., Россия</p>
                 </div>
             </div>
-            <div class="col-md-4 feed d-flex justify-content-center" >
+            <div class="col-lg-4 col-md-6 feed d-flex justify-content-center" >
                 <div class="feed-content">
                     <img src="img/feedback/left-quote-mark.png">
                     <p style="margin: 15px 0;">Спасибо за первоклассное обслуживание. Приставка – просто класс. С ней интереснее ездить в длительные командировки и на отдых.
@@ -295,7 +295,7 @@ $this->title = 'Easy-TV';
                     <p class="signature">Наталия В., Украина</p>
                 </div>
             </div>
-            <div class="col-md-4 feed d-flex justify-content-center">
+            <div class="col-lg-4 col-md-12 feed d-flex justify-content-center">
                 <div class="feed-content">
                     <img src="img/feedback/left-quote-mark.png">
                     <p style="margin: 15px 0;">Как человек, поработавший в сфере телевидения, могу сказать, что Easy TV способно удовлетворить даже самые утонченные вкусы.

@@ -253,12 +253,13 @@ nav{
 .feedback-form{
     background: #2D2B74 url("../img/feedback/form-feedback.png") center center no-repeat fixed;
     background-size: cover;
-    height: 500px;
+    min-height: 500px;
 
 }
 
 input[type="text"], input[type="email"], input[type="tel"]{
-    min-width: 350px;
+    min-width: 150px;
+    width:350px;
     height: 35px;
     border-radius: 4px;
 }
