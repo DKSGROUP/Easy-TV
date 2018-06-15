@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+
+@font-face{
+    font-family: MuseoSans;
+    src: url(../font/museosanscyrl/MuseoSansCyrl.otf);
+}
+
+@font-face{
+    font-family: Firasans;
+    src: url(../font/firasans/FiraSans-Regular.otf);
+}
+
+body{
+
+    font-family: Firasans;
+    color: #333;
+}
+
+h1{
+    font-family: Firasans;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+}
+
+p{
+    line-height: 19px;
+    font-size: 16px;
+}
+nav{
+    height: 60px;
+    background-color: #fff;
+}
+.header{
+    background: #9aa3ae url(../img/header/NEWSE.png) top center no-repeat;
+    color: #fff;
+}
+
+.title-text{
+    max-width: 795px;
+    margin: 0 auto;
+
+}
+.title-text h1{
+    font-family: MuseoSans;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.title-text p{
+    font-family: Firasans;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.bounce{
+    animation-duration: 3s !important;
+    animation-delay: 300ms !important;
+    animation-iteration-count: infinite !important;
+    animation-name: bounce !important;
+    position: absolute;
+    right: 50%;
+
+    width: 26px;
+    height: 12px;
+    margin-top: 150px;
+    margin-bottom: 125px;
+
+}
+.btn{
+    width: 160px;
+    height: 33px;
+    padding: 0;
+    background-color: #55A462;
+    color: #fff;
+    border: #55A462;
+}
+.btn:hover{
+    background-color: #3d7c47;
+    color: #fff;
+    border: #3d7c47;
+}
+
+.why-we h1{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.why-we p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.why-we img {
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+
+.more-present{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 230px;
+    height: 33px;
+}
+
+.content{
+
+}
+
+.child, .girl,.men,.serial,.sport,.music,.xxx,.discovery{
+    width: 540px !important;
+    height: 336px !important;
+    margin: 15px;
+}
+
+.child{
+    background: #111 url("../img/content/Child.png") center center;
+}
+
+.girl{
+    background: #111 url("../img/content/Girls.png") center center;
+
+}
+.men{
+    background: #111 url("../img/content/Mens.png") center center;
+
+}
+.serial{
+    background: #111 url("../img/content/gatsby.png") center center;
+
+}
+.sport{
+    background: #111 url("../img/content/sport.png") center center;
+
+}
+.music{
+    background: #111 url("../img/content/music.png") center center;
+
+}
+.xxx{
+    background: #111 url("../img/content/xxx.png") center center;
+
+}
+.discovery{
+    background: #111 url("../img/content/discovery.png") center center;
+    /*background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);*/
+}
+.text{
+    color: #fff;
+    height: 80%;
+}
+.content-text{
+    width: 540px !important;
+    padding: 100px 25px 20px 25px;
+    background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+/*-----------------*/
+#prices{
+    color: #333333;
+    margin: 0 auto;
+    font-size: 16px;
+    list-style-image: url(../img/price/ellipse.png);
+    padding:0;
+}
+#prices ul{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#prices ul li {
+    padding: 5px;
+}
+#pr{
+    margin: 0 auto;
+    width: 1280px;
+}
+.caption{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+}
+.comment{
+    font-weight: bolder;
+    padding-bottom: 65px;
+}
+#prices img{
+    padding-left: 80px;
+}
+
+#join-btn{
+    width: 540px;
+    height: 70px;
+    text-align: center;
+    color: #55A462;
+    background: #fff;
+    font-weight: bold;
+    border: 1px solid rgba(85, 164, 98, 0.27);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#text-btn{
+    color: #828282;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+/*-----------------------*/
+
+.present{
+    height: 225px;
+    background: #000 url("../img/Group.png") center center no-repeat fixed;
+
+    background-size: cover;
+}
+
+/**---------feed back---------------*/
+
+.feed-content {
+    width: 350px !important;
+    min-height: 280px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 35px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.feedback{
+
+    background-color: #F8FAFD;
+}
+
+.signature{
+    color: #55A462;
+    position: absolute;
+    bottom: 10px;
+}
+
+.feedback-form{
+    background: #2D2B74 url("../img/feedback/form-feedback.png") center center no-repeat fixed;
+    background-size: cover;
+    height: 500px;
+
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    min-width: 350px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+textarea{
+    min-width: 350px;
+    height: 100px;
+    border-radius: 4px;
+}
+label h1{
+    color: #fff;
+}
