@@ -116,7 +116,7 @@ nav{
 }
 
 .child, .girl,.men,.serial,.sport,.music,.xxx,.discovery{
-    width: 540px !important;
+    /*width: 540px !important;*/
     height: 336px !important;
     margin: 15px;
 }
@@ -154,15 +154,16 @@ nav{
     /*background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);*/
 }
 .text{
+    align-items: flex-end;
+    display: flex;
     color: #fff;
-    height: 80%;
+    height: 100%;
 }
 .content-text{
-    width: 540px !important;
+    /*width: 540px !important;*/
     padding: 100px 25px 20px 25px;
     background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);
-    position: absolute;
-    bottom: 15px;
+
 }
 
 
@@ -172,7 +173,7 @@ nav{
     color: #333333;
     margin: 0 auto;
     font-size: 16px;
-    list-style-image: url(../img/price/ellipse.png);
+    list-style-image: url('../img/price/ellipse.png');
     padding:0;
 }
 #prices ul{
@@ -218,7 +219,7 @@ nav{
 /*-----------------------*/
 
 .present{
-    height: 225px;
+    min-height: 225px;
     background: #000 url("../img/Group.png") center center no-repeat fixed;
 
     background-size: cover;
