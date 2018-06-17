@@ -12,7 +12,7 @@ $this->title = 'Easy-TV';
 ?>
 <link href="css/style.css">
 <!--Head-->
-<div class="header" style="height: 680px; background: rgba(15, 18, 49, 0.34) url('../img/header/NEWSE.png') top center no-repeat; background-size: 100%">
+<div class="header" style="height: 680px; background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center no-repeat; background-size: 100%">
     <div class="container">
     <div class="row">
         <div class="col-12">
@@ -37,28 +37,45 @@ $this->title = 'Easy-TV';
         <div class="row">
             <div class="col-12"  style="margin-top: 75px;">
                 <h1 class="text-center">Почему мы?</h1>
+                <p class="text-center" style="width: 80%;padding-top: 20px; margin: 0 auto;">С Easy TV вам не надо платить за каждый просмотренный фильм или программу – оплатив подписку вы можете смотреть неограниченное количество передач в течение оплачиваемого периода.</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="content text-center">
-                    <img src="img/why-we/content.png" alt="ellipse">
-                    <h1>Количество контента</h1>
-                    <p>Более 1400 каналов России и стран Европы, в том числе HD. Доступ к контенту и Триколор</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="content-why-we text-center">
+                    <img src="img/why-we/archive.png" alt="ellipse">
+                    <h1>Архив программ</h1>
+                    <p>Easy TV поддерживает архивацию 
+                    любимых программ и фильмов для 
+                    просмотра в удобное для пользователя 
+                    время. Сервис позволяет сохранять 
+                    нужные передачи в архиве до 14-ти дней</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="content text-center">
-                    <img src="img/why-we/films.png" alt="ellipse">
-                    <h1>Большая фильмотека</h1>
-                    <p>Просмотр фильмов и сериалов со можеством озвучек и переводов без назойливой рекламы</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="content-why-we text-center">
+                    <img src="img/why-we/timezone.png" alt="ellipse">
+                    <h1>Выбор часового пояса</h1>
+                    <p>Не хотите зависеть от ТВ- программы?
+                     Смотите передачи с любого уголка мира 
+                    в удобное для Вас время - теперь это 
+                    возможно благодаря EasyTV. Просто 
+                    выберите часовой пояс и смотрите 
+                    передачи раньше всех!</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="content text-center">
-                    <img src="img/why-we/opportunity.png" alt="ellipse">
-                    <h1>Множество возможнстей</h1>
-                    <p>Архивируйте любые программы и смотрите их в удобное время. Выбор каналов подходящих часовых поясов</p>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="content-why-we text-center">
+                    <img src="img/why-we/partner.png" alt="ellipse">
+                    <h1>Партнерская программа</h1>
+                    <p>Обеспечить себе
+                    дополнительный 
+                    доход - это легко, просто присоединитесь
+                    к нашей партнерской программе. 
+                    Привлекайте клиентов
+                    в любой стране 
+                    мира и получайте вознаграждение.</p>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
@@ -66,21 +83,16 @@ $this->title = 'Easy-TV';
 <div class="presentation" style="background-color: #F8FAFD;">
     <div class="container" style="padding-top: 70px;padding-bottom: 80px;">
         <div class="row">
-            <div class="col-lg-6">
-                <img src="img/why-we/Rectangle.png" alt="Rectangle">
-            </div>
-            <div class="col-lg-6" style="line-height: 19px; font-size: 16px;">
-                <p>С EASY TV вы можете смотреть любимые программы буквально из
-                    любой точки Земли - мы предоставляем клиентам удобную в
-                    использовании и совместимую с любыми девайсами приставку,
-                    которую можно взять с собой в путешествие</p>
-                <p style="margin: 15px 0;">Включили в розетку, подсоединили интернет и наслаждаетесь
-                    многообразием каналов </p>
-                <p>EasyTV — это всегда преосходное качество вещания, которое не зависит от погоды.</p>
-
+            <div class="col-lg-6 col-md-12 col-12 text-center text-lg-right">
                 <h1 style="font-size: 16px;font-weight: bold;">Хотите узнать больше?</h1>
-                <button class="btn btn-outline-seccess more-present">Закажите презентацию</button>
-
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 text-center text-lg-left">
+                    <?php
+                    echo Button::widget([
+                        'label' => 'Закажите презентацию',
+                        'options' => ['class' => 'btn btn-outline-seccess more-present text-center', 'style' => 'width: 230px; height: 33px;'],
+                    ]);
+                    ?>
             </div>
         </div>
     </div>
@@ -322,7 +334,10 @@ $this->title = 'Easy-TV';
     <div class="container">
         <div class="row">
             <div class="col-12 text-center" style="margin-top: 60px;">
+                
                 <h1 style="font-size: 20px; line-height: 24px; color: #fff !important; margin-bottom: 30px;">Хотите сотрудничать или задать вопрос?</h1>
+
+                 
                 <form>
                     <label for="name"><h1>Имя</h1></label>
                     <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
@@ -342,6 +357,7 @@ $this->title = 'Easy-TV';
                     ]);
                     ?>
                 </form>
+
             </div>
         </div>
     </div>
