@@ -336,28 +336,91 @@ $this->title = 'Easy-TV';
             <div class="col-12 text-center" style="margin-top: 60px;">
                 
                 <h1 style="font-size: 20px; line-height: 24px; color: #fff !important; margin-bottom: 30px;">Хотите сотрудничать или задать вопрос?</h1>
-
-                 
+<!--
                 <form>
+                 <table>
+                     <tr>
+                         <td class="text-inp text-right">
+                            <label for="name"><h1>Имя</h1></label>
+                         </td>
+                         <td class="inp">
+                            <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
+                        </td>
+                     </tr>
+                     <tr>
+                         <td class="text-inp text-right">
+                            <label for="email"><h1>E-mail</h1></label>
+                        </td>
+                        <td class="inp">
+                            <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
+                        </td>
+                     </tr>
+                     <tr>
+                         <td class="text-inp text-right">
+                             <label for="telNo"><h1>Номер телефона</h1></label>
+                         </td>
+                         <td class="inp">
+                             <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
+                         </td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td class="inp"><textarea placeholder="Ваше сообщение"  style="padding: 8px;margin-bottom: 50px;"></textarea></td>
+                     </tr>
+                 </table>
+             </form>
+         -->
+<!--
                     <label for="name"><h1>Имя</h1></label>
                     <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
                     <br>
-                    <label for="email"><h1>E-mail</h1></label>
-                    <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
+                    
                     <br>
-                    <label for="telNo"><h1>Номер телефона</h1></label>
+                    
                     <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
                     <br>
                     <textarea placeholder="Ваше сообщение"  style="padding: 8px;margin-bottom: 50px;"></textarea>
                     <br>
-                    <?php
+                -->
+
+
+
+                    
+
+            </div>
+
+            <div class="col-md-5 text-md-right text-center"  style="margin: 5px 0;">
+                <label for="name"><h1>Имя</h1></label>
+            </div>
+            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+                <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
+            </div>
+
+            <div class="col-md-5 text-md-right text-center" style="margin: 5px 0;">
+                <label for="email"><h1>E-mail</h1></label>
+                        
+            </div>
+            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+                <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
+            </div>
+
+            <div class="col-md-5 text-md-right text-center" style="margin: 5px 0;">
+                <label for="telNo"><h1>Номер телефона</h1></label>    
+            </div>
+            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+                <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
+            </div>
+            <div class="col-md-5 text-md-right text-center"></div>
+            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+                <textarea placeholder="Ваше сообщение"  style="margin: 5px 0; padding: 8px;"></textarea>
+            </div>
+            <div class="col-12 text-center" style="margin-top: 30px; margin-bottom: 35px; ">
+                <?php
                     echo Button::widget([
                             'label' => 'Отправить',
                             'options' => ['class' => 'btn', 'style' => 'color: #fff;'],
                     ]);
                     ?>
-                </form>
-
             </div>
         </div>
     </div>
