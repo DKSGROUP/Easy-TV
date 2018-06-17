@@ -166,7 +166,7 @@ $this->title = 'Easy-TV';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 channel">
+                <div class="col-12 col-lg-6 channel">
                     <div class="sport">
                         <div class="text">
                             <div class="content-text">
@@ -219,6 +219,40 @@ $this->title = 'Easy-TV';
                                     о природе, технике, истории, географии, астрономии и физике
                                     удовлетворят интересы любознательных зрителей</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 ">
+                    <div class="bussines ">
+                        <div class="image-bussines" style="margin-top: 15px; min-height: 380px; display: flex;">
+                            <div class=" content-text" style="width: 100%;">
+                                <div class="text">
+                                    <div class="text-in-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6" style=" display: flex; align-items: flex-end;">
+                                                    <div class="cont">
+                                                        <h1>Контент для вашего бизнеса</h1>
+                                                        <p>У Вас есть ресторан, бар или отель? Готовы предложить решения для вашего бизнеса.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <div class="back" style="margin: 0 auto 20px auto;">
+                                                        <p style="width: 85%; margin: 0 auto;">Отправте заявку на бизнес-сотрудничество и мы сообщим подробности предложения</p>
+                                                        <input type="email" name="email-bus" placeholder="email@example.com" style="padding: 8px; margin-top: 10px; margin-bottom: 15px;">
+                                                        <br>
+                                                        <?php
+                                                            echo Button::widget([
+                                                                    'label' => 'Отправить',
+                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;'],
+                                                            ]);
+                                                            ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div></div></div>
                         </div>
                     </div>
                 </div>
@@ -329,89 +363,38 @@ $this->title = 'Easy-TV';
     </div>
 </div>
 
-<!---->
+<!--feedback form-->
 <div class="feedback-form">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center" style="margin-top: 60px;">
                 
                 <h1 style="font-size: 20px; line-height: 24px; color: #fff !important; margin-bottom: 30px;">Хотите сотрудничать или задать вопрос?</h1>
-<!--
-                <form>
-                 <table>
-                     <tr>
-                         <td class="text-inp text-right">
-                            <label for="name"><h1>Имя</h1></label>
-                         </td>
-                         <td class="inp">
-                            <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
-                        </td>
-                     </tr>
-                     <tr>
-                         <td class="text-inp text-right">
-                            <label for="email"><h1>E-mail</h1></label>
-                        </td>
-                        <td class="inp">
-                            <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
-                        </td>
-                     </tr>
-                     <tr>
-                         <td class="text-inp text-right">
-                             <label for="telNo"><h1>Номер телефона</h1></label>
-                         </td>
-                         <td class="inp">
-                             <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
-                         </td>
-                     </tr>
-                     <tr>
-                         <td></td>
-                         <td class="inp"><textarea placeholder="Ваше сообщение"  style="padding: 8px;margin-bottom: 50px;"></textarea></td>
-                     </tr>
-                 </table>
-             </form>
-         -->
-<!--
-                    <label for="name"><h1>Имя</h1></label>
-                    <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
-                    <br>
-                    
-                    <br>
-                    
-                    <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
-                    <br>
-                    <textarea placeholder="Ваше сообщение"  style="padding: 8px;margin-bottom: 50px;"></textarea>
-                    <br>
-                -->
-
-
-
-                    
-
             </div>
 
-            <div class="col-md-5 text-md-right text-center"  style="margin: 5px 0;">
+            <div class="col-md-4 text-md-right text-center"  style="margin: 5px 0;">
                 <label for="name"><h1>Имя</h1></label>
             </div>
-            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
                 <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
             </div>
 
-            <div class="col-md-5 text-md-right text-center" style="margin: 5px 0;">
+            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
                 <label for="email"><h1>E-mail</h1></label>
                         
             </div>
-            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
                 <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
             </div>
 
-            <div class="col-md-5 text-md-right text-center" style="margin: 5px 0;">
+            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
                 <label for="telNo"><h1>Номер телефона</h1></label>    
             </div>
-            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
                 <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
             </div>
-            <div class="col-md-5 text-md-right text-center"></div>
-            <div class="col-md-7 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-4 text-md-right text-center"></div>
+            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
                 <textarea placeholder="Ваше сообщение"  style="margin: 5px 0; padding: 8px;"></textarea>
             </div>
             <div class="col-12 text-center" style="margin-top: 30px; margin-bottom: 35px; ">

@@ -92,7 +92,7 @@ header a.navbar-brand {
 }
 
 header>nav>div.container {
-    max-width: 1400px;
+   /* max-width: 1400px;*/
 }
 
 

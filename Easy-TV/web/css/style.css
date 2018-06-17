@@ -35,12 +35,25 @@ nav{
     /*min-height: 60px;
     */background-color: #fff;
 }
+.collapse {
+    justify-content: flex-end;
+}
 .header{
     background: #9aa3ae url(../img/header/NEWSE.png) top center no-repeat;
     color: #fff;
     background-size: cover;
 }
+.navbar a{
+    color: #000;
+}
+.navbar a:hover{
+    color: #55A462;
+}
+.area:hover{
+    background-color: #55A462 !important;
+    color: #fff !important;
 
+}
 .title-text{
     max-width: 795px;
     margin: 0 auto;
@@ -71,6 +84,7 @@ nav{
     margin-bottom: 125px;
 
 }
+
 .btn{
     width: 160px;
     height: 33px;
@@ -84,6 +98,8 @@ nav{
     color: #fff;
     border: #3d7c47;
 }
+
+
 
 .why-we h1{
     font-size: 16px;
@@ -109,7 +125,9 @@ nav{
     height: 33px;
 }
 
-
+.channel{
+    padding: 0 !important;
+}
 .child, .girl,.men,.serial,.sport,.music,.xxx,.discovery{
     /*width: 540px !important;*/
     height: 336px !important;
@@ -148,21 +166,30 @@ nav{
     background: #111 url("../img/content/discovery.png") center center;
     /*background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);*/
 }
+
+.image-bussines{
+
+    background: #111 url("../img/content/bussines.png") center center;
+}
 .text{
     align-items: flex-end;
     display: flex;
     color: #fff;
     height: 100%;
 }
+
 .content-text{
     /*width: 540px !important;*/
     padding: 100px 25px 20px 25px;
     background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);
 
 }
-
-
-
+.back{
+    background-color:  rgba(51, 51, 51, 0.36);
+    border-radius: 4px;
+    padding: 25px 10px;
+    width: 85%;
+}
 /*-----------------*/
 #prices{
     color: #333333;

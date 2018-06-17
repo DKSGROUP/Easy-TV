@@ -53,21 +53,19 @@ AppAsset::register($this);
 
     <?php
     echo Nav::widget([
-        'options' => ['class' => 'navbar-toggleable-md collapse text-right',
+        'options' => ['class' => 'navbar navbar-expand-lg navbar-nav collapse nav-wid',
                         'style' => 'color: #fff;'],
         'items' => [
-            ['label' => 'О нас', 'url' => ['/site/index']],
-            ['label' => 'Продукты', 'url' => ['/site/about']],
-            ['label' => 'Преимущества', 'url' => ['/site/contact']],
-            ['label' => 'Отчетность', 'url' => ['/site/contact']],
-            ['label' => 'Вопросы', 'url' => ['/site/contact']],
-            ['label' => 'Новости', 'url' => ['/site/contact']]
+            ['label' => 'Преимущества', 'url' => ['/site/index']],
+            ['label' => 'Цены', 'url' => ['/site/about']],
+            ['label' => 'Реферальная система', 'url' => ['/site/contact']],
+            ['label' => 'Помощь', 'url' => ['/site/contact']],
         ],
     ]);
 
     echo Button::widget([
         'label' => $endDiv,
-        'options' => ['class' => 'btn btn-outline-success', 'style' => 'margin-left: 15px; color: #fff;'],
+        'options' => ['class' => 'btn btn-outline-success text-center area', 'style' => ' color: #000; background-color: #fff; border: 1px solid #55A462; border-radius: 4px;'],
     ]);
 ?>
 
@@ -86,7 +84,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="img/header/logo.png" alt="LOGO" style="height:60px; ">
+                <img src="img/header/logo-footer.png" alt="LOGO" style="height:60px; ">
             </div>
         </div>
     </div>
