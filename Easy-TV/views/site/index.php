@@ -11,6 +11,1167 @@ AppAsset::register($this);
 $this->title = 'Easy-TV';
 ?>
 <link href="css/style.css">
+
+<!--Modals -->
+<script type="text/javascript">
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_1','#step1_2')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_2','#step1_3')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_3','#step1_4')
+    ;
+    });
+
+
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_1','#step2_2')
+    ;
+    });
+
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_2','#step2_3')
+    ;
+    });
+
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_1','#step2_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_2','#step2_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_3','#step2_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_4','#step2_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_2','#step2_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_3','#step2_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_2','#step1_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_3','#step1_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step1_4','#step1_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_1','#step1_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_2','#step1_1')
+    ;
+    });
+    $(function(){
+    var two_modal = function(id_step1_1,id_step1_2) {
+      var show_step1_2 = false;
+      $('a[href="' + id_step1_2 + '"]').click(function(e) {
+        e.preventDefault();
+        show_step1_2 = true;
+        $(id_step1_1).modal('hide');
+      });
+      $(id_step1_1).on('hidden.bs.modal', function (e) {
+        if (show_step1_2) {
+          show_step1_2 = false;
+          $(id_step1_2).modal('show');
+        }
+      })
+     
+    }('#step2_3','#step1_1')
+    ;
+    });
+    </script>
+    <!-- Modal step1_1-->
+    <div class="modal fade" id="step1_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button join-btn-act join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" >
+                            <div class="col-md-8 col-sm-12 step1">
+                                <p class="text-center caption" >Шаг 1 из 4: Выберите товар</p>
+
+
+                                <a href="#">
+                                    <button type="button" class="btn button step1-btn" >
+                                        <div class="row" >
+                                            <div class="col-md-12 col-sm-12 step1" >
+                                                <div class="t1">Подписка на 1 месяц </div>
+                                                <div class="t2">999 руб</div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12" style="text-align: left; padding-left: 30px; font-size: 14px; color: #828282;">
+                                                <input type="checkbox" name="auto-subscription" value="">автоподписка</div>
+
+                                            </div>
+                                        </button>
+                                    </a>
+                                    <a href="#"><button type="button" class="btn button step1-btn">
+                                        <div class="t1">Подписка на 3 месяца</div>
+                                        <div class="t2">2997 руб</div></button>
+                                    </a>
+                                    <a href="#"><button type="button" class="btn button step1-btn">
+                                        <div class="t1">Подписка на 12 месяцев</div>
+                                        <div class="t2">11988 руб</div></button>
+                                    </a>
+
+                                    <p class="plus"><img src="images/plus.png"></p>
+
+                                    <div class="row" >
+                                        <div class="col-md-12 col-sm-12 ">
+                                            <a href="#">
+                                                <button type="button" class="btn button step1-btn2">
+
+                                                    <div class="col-md-12 col-sm-12 ">
+
+                                                        <div style="float: left;">Оборудование</div>
+                                                        <div style="float:right;">4999 руб</div>
+                                                    </div>
+
+                                                    <p class="t5" style="clear: both;"><b>Комплект поставки:</b></p>
+                                                    <ul style="padding: 0;">
+
+                                                        <div class="row" >
+                                                            <div class="col-md-6 col-sm-12 t5" style="min-width: 300px; float: left;">
+
+                                                                <li>- сетевой мультимедийный медиаплеер.</li>
+                                                                <li>- кабель HDMI</li>
+                                                                <li>- кабель 3.5mm Mini Jack to ЗRСА composite AV.</li>
+                                                                <li>- адаптер питания 5V 1.5А.</li>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12 t5" style="min-width: 300px; float: left;">
+                                                                <li>- программируемый пульт ДУ.</li>
+                                                                <li>- элементы питания АА - 2шт.</li>
+                                                                <li>- кабель Ethernet.</li>
+                                                                <li>- руководство по быстрой установке</li>
+                                                            </div>
+                                                        </div>
+                                                    </ul>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row justify-content-center log">
+                            <div class="col-md-4 col-sm-10">
+                                <p>Вас пригласил друг? Введите его логин:
+                                    <input type="text" class="form-control" required="" placeholder="login"></p>
+                                </div>
+                                <div class="col-md-4 col-sm-10" style="text-align: right; font-size: 30px; font-style: bold; color: #55A462;">Сумма: 5998 руб</div>
+
+                                <div class="col-md-12 col-sm-12 further" ><a href="#step1_2"  ><button type="button" class="btn button further-btn" >Далее</button></a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal  step1_2-->
+    <div class="modal fade" id="step1_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button join-btn-act join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" >
+                            <div class="col-md-12 col-sm-12 step2">
+                                <p class="text-center caption" >Шаг 2 из 4: Введите личную информацию</p>
+                                <form>
+                                    <div class="row justify-content-center " >
+                                        <div class="col-md-5 col-sm-10">
+
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>ФИО</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>Логин</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="Login">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>E-mail</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="email@example.com">
+                                                    </div>
+                                                </div>
+                                            </p>
+
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>Номер</label>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); border-radius: 4px 0 0 4px; ">
+                                                            <option>+7</option>
+                                                            <option>Пункт2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-8">
+                                                        <input type="text" class="form-control " required="" placeholder="+7(000) 999-99-99">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </div>
+
+
+                                        <div class="col-md-5 col-sm-10">
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>Страна</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-6 col-sm-6 ">
+
+                                                        <div class="row justify-content-center" >
+                                                            <div class="col-md-4 col-sm-4">
+                                                                <label>Город</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8">
+                                                                <input type="text" class="form-control " required="" placeholder="">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6 ">
+                                                        <div class="row justify-content-center" >
+                                                            <div class="col-md-4 col-sm-4">
+                                                                <labelі>Индекс</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8">
+                                                                <input type="text" class="form-control " required="" placeholder="хххххх">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>Улица</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-6 col-sm-6 ">
+
+                                                        <div class="row justify-content-center" >
+                                                            <div class="col-md-4 col-sm-4">
+                                                                <label>Дом</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8">
+                                                                <input type="text" class="form-control " required="" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6 ">
+                                                        <div class="row justify-content-center" >
+                                                            <div class="col-md-4 col-sm-4">
+                                                                <labelі>Квартира</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8">
+                                                                <input type="text" class="form-control " required="" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="col-md-12 col-sm-12 further" ><a href="#step1_3"  ><button type="button" class="btn button further-btn" >Далее</button></a></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal step1_3-->
+    <div class="modal fade" id="step1_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button join-btn-act join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-12 col-sm-10" >
+                                <p class="text-center caption" >Шаг 3 из 4: Выберите способ доставки</p>
+
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 col-sm-10" style="text-align: center; font-size: 20px; font-weight: 500;">
+                                        <button type="button" class="btn button step1-btn ">
+
+                                            Бесплатная доставка любой почтовой службой
+
+                                        </button>
+                                    </div>  
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 col-sm-12 further" ><a href="#step1_4"  ><button type="button" class="btn button further-btn">Далее</button></a></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal step1_4-->
+    <div class="modal fade" id="step1_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button join-btn-act join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row justify-content-center step4">
+
+                            <div class="col-md-10 col-sm-10" >
+                                <p class="text-center caption" >Шаг 4 из 4: Подтверждение заказа</p>
+
+                                <div class="row " >
+                                    <div class="col-md-4 col-sm-12 bord"  >
+                                        <p style="font-weight: bold; font-size: 20px;">Товар</p>
+                                        <p>1. Подписка на 1 месяц - 999 руб</p>
+                                        <p>2. Оборудование - 4999 руб</p>
+                                        <p>Сумма - 5998 руб</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 bord" >
+                                        <p style="font-weight: bold; font-size: 20px;">Личная информация</p>
+                                        <p>ФИО, Логин, </p>
+                                        <p>Почта, Номер,</p>
+                                        <p>Страна, Город, Индекс,</p>
+                                        <p>Улица, Дом, Квартира</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 bord" >
+
+                                        <p style="font-weight: bold; font-size: 20px;">Способ доставки</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 further" ><a href="#"><button type="button" class="btn button further-btn" >Перейти к оплате</button></a></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal step2_1-->
+    <div class="modal fade" id="step2_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn-act join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" >
+                            <div class="col-md-6 col-sm-10 step1_2">
+                                <p class="text-center caption" >Шаг 1 из 3: Выберите товар</p>
+
+
+                                <a href="#">
+                                    <button type="button" class="btn button step1-btn" >
+                                        <div class="row" >
+                                            <div class="col-md-12 col-sm-12 step1" >
+                                                <div class="t1">Подписка на 1 месяц </div>
+                                                <div class="t2">999 руб</div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12" style="text-align: left; padding-left: 30px; font-size: 14px; color: #828282;">
+                                                <input type="checkbox" name="auto-subscription" value="">автоподписка
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                </a>
+                                <a href="#"><button type="button" class="btn button step1-btn">
+                                    <div class="t1">Подписка на 3 месяца</div>
+                                    <div class="t2">2997 руб</div></button>
+                                </a>
+                                <a href="#"><button type="button" class="btn button step1-btn">
+                                    <div class="t1">Подписка на 12 месяцев</div>
+                                    <div class="t2">11988 руб</div></button>
+                                </a>
+
+
+                                <div class="row justify-content-center log">
+                                    <div class="col-md-6 col-sm-12 further" ><a href="#step2_2"  ><button type="button" class="btn button further-btn" >Далее</button></a></div>
+
+                                    <div class="col-md-6 col-sm-12" style="text-align: right; font-size: 30px; font-style: bold; color: #55A462;">Сумма: 5998 руб</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal step2_2-->
+    <div class="modal fade" id="step2_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn-act join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" >
+                            <div class="col-md-10 col-sm-10 step2">
+                                <p class="text-center caption" >Шаг 2 из 3: Введите личную информацию</p>
+                                <form>
+                                    <div class="row justify-content-center " >
+                                        <div class="col-md-7 col-sm-12">
+
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>ФИО</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>Логин</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="Login">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>E-mail</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10">
+                                                        <input type="text" class="form-control " required="" placeholder="email@example.com">
+                                                    </div>
+                                                </div>
+                                            </p>
+
+                                            <p>
+                                                <div class="row justify-content-center" >
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <label>Номер</label>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); border-radius: 4px 0 0 4px; ">
+                                                            <option>+7</option>
+                                                            <option>Пункт2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-8">
+                                                        <input type="text" class="form-control " required="" placeholder="+7(000) 999-99-99">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-12 col-sm-12 further" ><a href="#step2_3"  ><button type="button" class="btn button further-btn" >Далее</button></a></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal step2_3-->
+    <div class="modal fade" id="step2_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content"style="width: 230%; margin-left: -65%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="row justify-content-center" >
+
+                            <div class="col-md-10 col-sm-10 prices">
+                                <p class="text-center caption" >Цены и условия</p>
+                                <div class="row justify-content-center" >
+                                    <div class="col-md-9 col-sm-10">
+                                        <div>
+                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
+                                            Теперь все последние новинки кино всегда с вами.
+                                        </div>
+
+                                        <ul>
+                                            <div class="row justify-content-center" >
+                                                <div class="col-md-5 col-sm-10">
+                                                    <li>Гарантия на оборудование</li>
+                                                    <li>Не кардшеринг</li>
+                                                    <li>Не нужна спутниковая тарелка</li>
+                                                </div>
+                                                <div class="col-md-7 col-sm-10">
+                                                    <li>Более 1000 каналов в отличном качестве</li>
+                                                    <li>Никаких дополнительных платежей</li>
+                                                    <li>Множество полезных функций</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-10 img-price">
+                                        <img src="images/price.png"></p>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Я — новый клиент</div>
+                                        <a href="#step1_1"><button type="button" class="btn button  join-btn"  >Присоедениться к сервису</button></a>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="text-btn">Уже использую EasyTV</div>
+                                        <a href="#step2_1"><button type="button" class="btn button join-btn-act join-btn" >Продлить подписку</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row justify-content-center step4">
+
+                            <div class="col-md-8 col-sm-10" >
+                                <p class="text-center caption" >Шаг 3 из 3: Подтверждение заказа</p>
+
+                                <div class="row " >
+                                    <div class="col-md-6 col-sm-12 bord"  >
+                                        <p style="font-weight: bold; font-size: 20px;">Товар</p>
+                                        <p>1. Подписка на 1 месяц - 999 руб</p>
+                                        <p>2. Оборудование - 4999 руб</p>
+                                        <p>Сумма - 5998 руб</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 bord" >
+                                        <p style="font-weight: bold; font-size: 20px;">Личная информация</p>
+                                        <p>ФИО, Логин, </p>
+                                        <p>Почта, Номер,</p>
+                                        <p>Страна, Город, Индекс,</p>
+                                        <p>Улица, Дом, Квартира</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 further" ><a href="#"><button type="button" class="btn button further-btn" >Перейти к оплате</button></a></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!--End Modals -->
 <!--Head-->
 <div class="header" style="height: 680px; background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center no-repeat; background-size: 100%">
     <div class="container">
@@ -54,7 +1215,7 @@ $this->title = 'Easy-TV';
                 <div class="content-why-we text-center">
                     <img src="img/why-we/timezone.png" alt="ellipse">
                     <h1>Выбор часового пояса</h1>
-                    <p>Не хотите зависеть от ТВ- программы?
+                    <p>Не хотите зависеть от ТВ - программы?
                      Смотите передачи с любого уголка мира 
                     в удобное для Вас время - теперь это 
                     возможно благодаря EasyTV. Просто 
@@ -87,12 +1248,14 @@ $this->title = 'Easy-TV';
                 <h1 style="font-size: 16px;font-weight: bold;">Хотите узнать больше?</h1>
             </div>
             <div class="col-lg-6 col-md-12 col-12 text-center text-lg-left">
+                <a href="Easy-TV.pdf" download>
                     <?php
                     echo Button::widget([
-                        'label' => 'Закажите презентацию',
+                        'label' => 'Скачать презентацию',
                         'options' => ['class' => 'btn btn-outline-seccess more-present text-center', 'style' => 'width: 230px; height: 33px;'],
                     ]);
                     ?>
+                    </a>
             </div>
         </div>
     </div>
@@ -261,49 +1424,55 @@ $this->title = 'Easy-TV';
     </div>
 </div>
 
-<div id="pr">
-    <div class="container">
-        <div class="row " >
-            <div class="col-md-12" id="prices">
-                <p class="text-center caption" >Цены и условия</p>
-                <div class="row " >
+<div class="container">
+        <div class="row justify-content-center" >
 
-                    <div class="col-md-7 col-sm-12">
+            <div class="col-md-10 col-sm-10 prices">
+                <p class="text-center caption" >Цены и условия</p>
+                <div class="row justify-content-center" >
+                    <div class="col-md-9 col-sm-10">
                         <div>
-                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать
-                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино.
+                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
+                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
                             Теперь все последние новинки кино всегда с вами.
                         </div>
 
                         <ul>
-                            <li>Гарантия на оборудование</li>
-                            <li>Не кардшеринг</li>
-                            <li>Не нужна спутниковая тарелка</li>
+                            <div class="row justify-content-center" >
+                                <div class="col-md-5 col-sm-10">
+                                    <li>Гарантия на оборудование</li>
+                                    <li>Не кардшеринг</li>
+                                    <li>Не нужна спутниковая тарелка</li>
+                                </div>
+                                <div class="col-md-7 col-sm-10">
+                                    <li>Более 1000 каналов в отличном качестве</li>
+                                    <li>Никаких дополнительных платежей</li>
+                                    <li>Множество полезных функций</li>
+                                </div>
+                            </div>
                         </ul>
-                        <div class="comment">	Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                        <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
                     </div>
 
-                    <div class="col-md-5 col-sm-12">
-                        <img src="img/price/price.png">
-                    </div>
-
-                    <div class="row text-center">
-                        <div class="col-md-6 col-sm-12">
-                            <div id="text-btn">Я — новый клиент</div>
-                            <a href="#"><button type="button" class="btn button" id="join-btn">Присоедениться к сервису</button></a>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12">
-                            <div id="text-btn">Уже использую EasyTV</div>
-                            <a href="#"><button type="button" class="btn button" id="join-btn">Продлить подписку</button></a>
-                        </div>
-
+                    <div class="col-md-3 col-sm-10 img-price">
+                        <img src="images/price.png">
                     </div>
                 </div>
-            </div>
+                <div class="row text-center">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="text-btn">Я — новый клиент</div>
+                        <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step1_1">Присоедениться к сервису</button>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="text-btn">Уже использую EasyTV</div>
+                        <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step2_1">Продлить подписку</button>
+                    </div>
+                </div>
+
+            </div>  
         </div>
     </div>
-</div>
 <!--Present-->
 <div class="present  d-flex justify-content-center align-items-center" style="margin-top: 30px;">
     <div class="container">
@@ -330,7 +1499,7 @@ $this->title = 'Easy-TV';
                     <p style="margin: 15px 0;">Замечательный сервис. Нравится огромный диапазон каналов.
                         Особо хочу отметить разделение контента по интересам - можно легко найти интересную передачу
                         или фильм для просмотра. Лично мне – требовательному киноману – Easy TV понравился.</p>
-                    <p class="signature">Алексей Т., Россия</p>
+                    <p class="signature">Алексей Т. , Россия</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 feed d-flex justify-content-center" >
@@ -338,7 +1507,7 @@ $this->title = 'Easy-TV';
                     <img src="img/feedback/left-quote-mark.png">
                     <p style="margin: 15px 0;">Спасибо за первоклассное обслуживание. Приставка – просто класс. С ней интереснее ездить в длительные командировки и на отдых.
                         И доставили приставку оперативно, ничего не скажешь. В общем, отлично работаете, ребята, так держать!</p>
-                    <p class="signature">Наталия В., Украина</p>
+                    <p class="signature">Наталия В. , Украина</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 feed d-flex justify-content-center">
@@ -346,14 +1515,14 @@ $this->title = 'Easy-TV';
                     <img src="img/feedback/left-quote-mark.png">
                     <p style="margin: 15px 0;">Как человек, поработавший в сфере телевидения, могу сказать, что Easy TV способно удовлетворить даже самые утонченные вкусы.
                         Я мало видел сервисов, которые предоставляют такой большой спектр контента, и обеспечивают такое качество вещания.</p>
-                    <p class="signature">Владимир Д., Россия</p>
+                    <p class="signature">Владимир Д. , Россия</p>
                 </div>
             </div>
 
             <div class="col-12 text-center" style="margin-top: 65px;">
                 <h1>Партнерская программа</h1>
-                <p>Ищем своего партнера в каждой стране</p>
-                <p style=" width: 68%; margin: 40px auto 65px auto;">Будем рады сотрудничать с Вами по агентской схеме, в рамках которой Вы работаете
+                <p style="margin: 35px 0;">Ищем своего партнера в каждой стране</p>
+                <p style=" width: 68%; margin:0 auto 65px auto;">Будем рады сотрудничать с Вами по агентской схеме, в рамках которой Вы работаете
                     только над привлечением клиентов и согласовываете условия подключения.
                     Всю работу по регистрации мерчанта в платежных системах, заключение договора,
                     интеграцию и поддержку мы будем осуществлять сами. Вам мы гарантируем часть

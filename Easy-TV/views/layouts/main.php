@@ -24,6 +24,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -35,7 +36,7 @@ AppAsset::register($this);
 
 
     Yii::$app->user->isGuest ? (
-                $endDiv = 'Личный кабинет'
+                $endDiv = 'Продлить подписку'
             ) : (
                 $endDiv = Yii::$app->user->identity->username
             );
