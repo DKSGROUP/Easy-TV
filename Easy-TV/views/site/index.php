@@ -181,7 +181,7 @@ $this->title = 'Easy-TV';
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 channel">
+                <div class="col-12 col-lg-6 channel" style="display: none;">
                     <div class="music">
                         <div class="text">
                             <div class="content-text">
@@ -196,7 +196,7 @@ $this->title = 'Easy-TV';
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 channel  ">
+                <div class="col-12 col-lg-6 channel  " style="display: none;">
                     <div class="xxx">
                         <div class="text">
                             <div class="content-text">

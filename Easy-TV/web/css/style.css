@@ -128,7 +128,8 @@ nav{
 .channel{
     padding: 0 !important;
 }
-.child, .girl,.men,.serial,.sport,.music,.xxx,.discovery{
+
+.child, .girl,.men,.serial,.sport,,.xxx,.discovery{
     /*width: 540px !important;*/
     height: 336px !important;
     margin: 15px;
