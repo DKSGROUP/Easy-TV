@@ -123,7 +123,7 @@ $this->title = 'Easy-TV';
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 channel">
-                    <div class="girl" style="margin: 15px;">
+                    <div class="girl">
                         <div class="text">
                             <div class="content-text">
                                 <h1>Разнообразный контент для девушек</h1>
