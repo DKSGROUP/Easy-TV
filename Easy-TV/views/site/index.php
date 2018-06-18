@@ -1171,6 +1171,37 @@ $this->title = 'Easy-TV';
             </div>
         </div>
     </div>
+
+<!--Message sent Bussines -->
+<div class="modal fade" id="message-send" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="border: none;">
+        <h1 style="text-align: center; font-size: 24px; line-height: 26px; padding-bottom: 20px;">Ваша заявка принята. Мы с вами свяжемся в ближайшее время.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Message send-->
+<div class="modal fade" id="message-send2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="border: none;">
+        <h1 style="text-align: center; font-size: 24px; line-height: 26px; padding-bottom: 20px;">Ваше сообщение отправлено.</h1>
+      </div>
+    </div>
+  </div>
+</div>
 <!--End Modals -->
 <!--Head-->
 <div class="header" style="height: 680px; background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center no-repeat; background-size: 100%">
@@ -1408,7 +1439,7 @@ $this->title = 'Easy-TV';
                                                         <?php
                                                             echo Button::widget([
                                                                     'label' => 'Отправить',
-                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;'],
+                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;', 'data-toggle' => 'modal', 'data-target' => '#message-send'],
                                                             ]);
                                                             ?>
                                                     </div>
@@ -1570,7 +1601,7 @@ $this->title = 'Easy-TV';
                 <?php
                     echo Button::widget([
                             'label' => 'Отправить',
-                            'options' => ['class' => 'btn', 'style' => 'color: #fff;'],
+                            'options' => ['class' => 'btn', 'style' => 'color: #fff;', 'data-toggle' => 'modal', 'data-target' => '#message-send2'],
                     ]);
                     ?>
             </div>
