@@ -366,6 +366,7 @@ nav{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     line-height: 100%;
+    border-radius: 10px;
 }
 .step1{text-align: center;}
 .step1-btn2{
@@ -380,6 +381,7 @@ nav{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     line-height: 100%;
+    border-radius: 10px;
 }
 .step1-btn2:hover{
     border: 1px solid #55A462;
