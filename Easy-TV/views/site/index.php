@@ -1228,6 +1228,8 @@ $this->title = 'Easy-TV';
 </div>
 </div>
 <!--Why we-->
+
+<div id="why-we"><a name="why-we" href="#why-we"></a></div>
 <div class="why-we" style="background-color: #F8FAFD;">
     <div class="container ">
         <div class="row">
@@ -1835,45 +1837,14 @@ $this->title = 'Easy-TV';
                           </div>
                       </div>
 
-                    <!--div class="bussines ">
-                        <div class="image-bussines" style="margin-top: 15px; min-height: 380px; display: flex;">
-                            <div class=" content-text" style="width: 100%;">
-                                <div class="text">
-                                    <div class="text-in-text">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-6" style=" display: flex; align-items: flex-end;">
-                                                    <div class="cont">
-                                                        <h1>Контент для вашего бизнеса</h1>
-                                                        <p>У Вас есть ресторан, бар или отель? Готовы предложить решения для вашего бизнеса.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 text-center">
-                                                    <div class="back" style="margin: 0 auto 20px auto;">
-                                                        <p style="width: 85%; margin: 0 auto;">Отправте заявку на бизнес-сотрудничество и мы сообщим подробности предложения</p>
-                                                        <input type="email" name="email-bus" placeholder="email@example.com" style="padding: 8px; margin-top: 10px; margin-bottom: 15px;">
-                                                        <br>
-                                                        <?php
-                                                            echo Button::widget([
-                                                                    'label' => 'Отправить',
-                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;', 'data-toggle' => 'modal', 'data-target' => '#message-send'],
-                                                            ]);
-                                                            ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
+                    
                 </div>
 
         </div>
     </div>
 </div>
 
+<div id="price"><a name="price" href="#price"></a></div>
 <div class="container">
         <div class="row justify-content-center" >
 
@@ -1936,6 +1907,8 @@ $this->title = 'Easy-TV';
 </div>
 
 <!--Feedback-->
+
+<div id="system"><a name="system" href="#system"></a></div>
 <div class="feedback">
     <div class="container">
         <div class="row">
@@ -1983,6 +1956,8 @@ $this->title = 'Easy-TV';
 </div>
 
 <!--feedback form-->
+
+<div id="help"><a name="help" href="#help"></a></div>
 <div class="feedback-form">
     <div class="container">
         <div class="row">

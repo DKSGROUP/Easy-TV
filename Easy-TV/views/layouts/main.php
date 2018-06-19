@@ -31,6 +31,7 @@ AppAsset::register($this);
 
 
     <header style=" box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
     <?php
 
 
@@ -54,15 +55,14 @@ AppAsset::register($this);
 
     <?php
     echo Nav::widget([
-        'options' => ['class' => 'navbar navbar-expand-lg navbar-nav collapse nav-wid',
-                        'style' => 'color: #fff;'],
-        'items' => [
-            ['label' => 'Преимущества', 'url' => ['/site/index']],
-            ['label' => 'Цены', 'url' => ['/site/about']],
-            ['label' => 'Реферальная система', 'url' => ['/site/contact']],
-            ['label' => 'Помощь', 'url' => ['/site/contact']],
-        ],
-    ]);
+        'options' => ['class' => ' col-sm-12 col-md-9 navbar navbar-expand-lg navbar-nav collapse nav-wid text-center','id'=>'navigation',
+            'style' => ' font-size: 15px; '],
+        'items' => array(
+            array('label' => 'Преимущества', 'url' => ('#why-we')),
+            array('label' => 'Цены', 'url' => ('#price')),
+            array('label' =>  'Реферальная система', 'url' => ('#system')),
+            array('label' =>  'Помощь', 'url' => ('#help')),
+        )]);
 
     echo Button::widget([
         'label' => $endDiv,
@@ -75,7 +75,6 @@ AppAsset::register($this);
     ?>
     </header>
 <div class="wrap">
-
         <?= $content ?>
 
 
