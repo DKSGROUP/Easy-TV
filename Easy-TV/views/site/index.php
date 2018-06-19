@@ -9,8 +9,12 @@ use app\assets\AppAsset;
 
 AppAsset::register($this);
 $this->title = 'Easy-TV';
-?>
+?><!--
 <link href="css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
 
 <!--Modals -->
 <script type="text/javascript">
@@ -1300,125 +1304,430 @@ $this->title = 'Easy-TV';
                 <h1>Контент на любой вкус</h1>
             </div>
                 <div class="col-12 col-lg-6 channel">
-                    <div class="child">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Развивающие каналы для детей</h1>
-                                <p>Сказки, мультфильмы, развивающие и образовательные
-                                    передачи,
-                                    познавательные рассказы о природе,
-                                    науке и многое
-                                    другое - все для
-                                    любознательных мальчиков и
-                                    девочек всех
-                                    возрастов. </p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="child">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Развивающие каналы для детей</h1>
+                                            <p>Сказки, мультфильмы, развивающие и образовательные
+                                                передачи,
+                                                познавательные рассказы о природе,
+                                                науке и многое
+                                                другое - все для
+                                                любознательных мальчиков и
+                                                девочек всех
+                                                возрастов. </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                              <div class="child2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Развивающие каналы для детей</h1>
+                                            <p>Сказки, мультфильмы, развивающие и образовательные
+                                                передачи,
+                                                познавательные рассказы о природе,
+                                                науке и многое
+                                                другое - все для
+                                                любознательных мальчиков и
+                                                девочек всех
+                                                возрастов. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="child3">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Развивающие каналы для детей</h1>
+                                            <p>Сказки, мультфильмы, развивающие и образовательные
+                                                передачи,
+                                                познавательные рассказы о природе,
+                                                науке и многое
+                                                другое - все для
+                                                любознательных мальчиков и
+                                                девочек всех
+                                                возрастов. </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
                 </div>
                 <div class="col-12 col-lg-6 channel">
-                    <div class="girl">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Разнообразный контент для девушек</h1>
-                                <p>Милых дам порадуют невероятно интересные
-                                    каналы о моде,
-                                    здоровье, красоте, кулинарии,
-                                    взаимоотношениях, семье и
-                                    воспитании детей.</p>
+                       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="girl">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Разнообразный контент для девушек</h1>
+                                            <p>Милых дам порадуют невероятно интересные
+                                                каналы о моде,
+                                                здоровье, красоте, кулинарии,
+                                                взаимоотношениях, семье и
+                                                воспитании детей.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                              <div class="girl2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Разнообразный контент для девушек</h1>
+                                            <p>Милых дам порадуют невероятно интересные
+                                                каналы о моде,
+                                                здоровье, красоте, кулинарии,
+                                                взаимоотношениях, семье и
+                                                воспитании детей.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="girl3">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Разнообразный контент для девушек</h1>
+                                            <p>Милых дам порадуют невероятно интересные
+                                                каналы о моде,
+                                                здоровье, красоте, кулинарии,
+                                                взаимоотношениях, семье и
+                                                воспитании детей.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                   
                 </div>
                 <div class="col-12 col-lg-6 channel">
-                    <div class="men">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Каналы для мужчин</h1>
-                                <p>Круг мужских интересов широк:
-                                    oхота, рыбалка, туризм,
-                                    экстремальные виды
-                                    спорта, оружие, автомобили, женщины
-                                    и много
-                                    других. С EasyTV каждый мужчина найдет для
-                                    себя что-то интересное и захватывающее.</p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="men">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Каналы для мужчин</h1>
+                                            <p>Круг мужских интересов широк:
+                                                oхота, рыбалка, туризм,
+                                                экстремальные виды
+                                                спорта, оружие, автомобили, женщины
+                                                и много
+                                                других. С EasyTV каждый мужчина найдет для
+                                                себя что-то интересное и захватывающее.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                              <div class="men2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Каналы для мужчин</h1>
+                                            <p>Круг мужских интересов широк:
+                                                oхота, рыбалка, туризм,
+                                                экстремальные виды
+                                                спорта, оружие, автомобили, женщины
+                                                и много
+                                                других. С EasyTV каждый мужчина найдет для
+                                                себя что-то интересное и захватывающее.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="men3">
+                                <div class="text">
+                                    <div class="content-text">
+                                        <h1>Каналы для мужчин</h1>
+                                        <p>Круг мужских интересов широк:
+                                            oхота, рыбалка, туризм,
+                                            экстремальные виды
+                                            спорта, оружие, автомобили, женщины
+                                            и много
+                                            других. С EasyTV каждый мужчина найдет для
+                                            себя что-то интересное и захватывающее.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    
                 </div>
                 <div class="col-12 col-lg-6 channel">
-                    <div class="serial">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Только лучшие фильмы и сериалы</h1>
-                                <p>Всё для настоящих киноманов: классика и
-                                    новинки мирового
-                                    кино в лучшем качестве, с безупречным переводом и
-                                    удобной
-                                    подборкой по жанрам</p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="serial">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Только лучшие фильмы и сериалы</h1>
+                                            <p>Всё для настоящих киноманов: классика и
+                                                новинки мирового
+                                                кино в лучшем качестве, с безупречным переводом и
+                                                удобной
+                                                подборкой по жанрам</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                              <div class="serial2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Только лучшие фильмы и сериалы</h1>
+                                            <p>Всё для настоящих киноманов: классика и
+                                                новинки мирового
+                                                кино в лучшем качестве, с безупречным переводом и
+                                                удобной
+                                                подборкой по жанрам</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="serial3">
+                                <div class="text">
+                                    <div class="content-text">
+                                        <h1>Только лучшие фильмы и сериалы</h1>
+                                        <p>Всё для настоящих киноманов: классика и
+                                            новинки мирового
+                                            кино в лучшем качестве, с безупречным переводом и
+                                            удобной
+                                            подборкой по жанрам</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    
                 </div>
                 <div class="col-12 col-lg-6 channel">
-                    <div class="sport">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Лучшие спортивные каналы</h1>
-                                <p>Не пропускаете ни одного футбольного матча или боксёрского
-                                    поединка?
-                                    Наслаждайтесь спортивными мероприятиями в HD
-                                    качестве: футбол, теннис,
-                                    хоккей, баскетбол – всё для астоящих
-                                    фанатов.</p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="sport">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Лучшие спортивные каналы</h1>
+                                            <p>Не пропускаете ни одного футбольного матча или боксёрского
+                                                поединка?
+                                                Наслаждайтесь спортивными мероприятиями в HD
+                                                качестве: футбол, теннис,
+                                                хоккей, баскетбол – всё для астоящих
+                                                фанатов.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                                <div class="sport2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Лучшие спортивные каналы</h1>
+                                            <p>Не пропускаете ни одного футбольного матча или боксёрского
+                                                поединка?
+                                                Наслаждайтесь спортивными мероприятиями в HD
+                                                качестве: футбол, теннис,
+                                                хоккей, баскетбол – всё для астоящих
+                                                фанатов.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="sport3">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Лучшие спортивные каналы</h1>
+                                            <p>Не пропускаете ни одного футбольного матча или боксёрского
+                                                поединка?
+                                                Наслаждайтесь спортивными мероприятиями в HD
+                                                качестве: футбол, теннис,
+                                                хоккей, баскетбол – всё для астоящих
+                                                фанатов.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
                 </div>
                 <div class="col-12 col-lg-6 channel" style="display: none;">
-                    <div class="music">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Любимая музыка для любого случая</h1>
-                                <p>Для поклонников самой разнообразной
-                                    музыки доступно
-                                    67 каналов с композициями всех
-                                    направлений и жанров для
-                                    любого
-                                    настроения и времени суток</p>
+                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="music">
+                                    <div class="text">
+                                        <div class="content-text">
+
+                                            <h1>Любимая музыка для любого случая</h1>
+                                            <p>Для поклонников самой разнообразной
+                                                музыки доступно
+                                                67 каналов с композициями всех
+                                                направлений и жанров для
+                                                любого
+                                                настроения и времени суток</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                                <div class="music2">
+                                    <div class="text">
+                                        <div class="content-text">
+
+                                            <h1>Любимая музыка для любого случая</h1>
+                                            <p>Для поклонников самой разнообразной
+                                                музыки доступно
+                                                67 каналов с композициями всех
+                                                направлений и жанров для
+                                                любого
+                                                настроения и времени суток</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="music3">
+                                    <div class="text">
+                                        <div class="content-text">
+
+                                            <h1>Любимая музыка для любого случая</h1>
+                                            <p>Для поклонников самой разнообразной
+                                                музыки доступно
+                                                67 каналов с композициями всех
+                                                направлений и жанров для
+                                                любого
+                                                настроения и времени суток</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    
                 </div>
                 <div class="col-12 col-lg-6 channel  " style="display: none;">
-                    <div class="xxx">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Каналы для взрослых</h1>
-                                <p>ХХХ каналы для самых искушённых
-                                    телезрителей.
-                                    Безупречное качество
-                                    изображения и звука на экранах Вашего
-                                    телевизора в любое время суток</p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="xxx">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Каналы для взрослых</h1>
+                                            <p>ХХХ каналы для самых искушённых
+                                                телезрителей.
+                                                Безупречное качество
+                                                изображения и звука на экранах Вашего
+                                                телевизора в любое время суток</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                                <div class="xxx2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Каналы для взрослых</h1>
+                                            <p>ХХХ каналы для самых искушённых
+                                                телезрителей.
+                                                Безупречное качество
+                                                изображения и звука на экранах Вашего
+                                                телевизора в любое время суток</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="xxx3">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Каналы для взрослых</h1>
+                                            <p>ХХХ каналы для самых искушённых
+                                                телезрителей.
+                                                Безупречное качество
+                                                изображения и звука на экранах Вашего
+                                                телевизора в любое время суток</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
                 </div>
                 <div class="col-12 col-lg-6 channel ">
-                    <div class="discovery">
-                        <div class="text">
-                            <div class="content-text">
-                                <h1>Мир знаний</h1>
-                                <p>Занимательные документальные и научно-популярные фильмы
-                                    о природе, технике, истории, географии, астрономии и физике
-                                    удовлетворят интересы любознательных зрителей</p>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="discovery">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Мир знаний</h1>
+                                            <p>Занимательные документальные и научно-популярные фильмы
+                                                о природе, технике, истории, географии, астрономии и физике
+                                                удовлетворят интересы любознательных зрителей</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="carousel-item">
+                                <div class="discovery2">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Мир знаний</h1>
+                                            <p>Занимательные документальные и научно-популярные фильмы
+                                                о природе, технике, истории, географии, астрономии и физике
+                                                удовлетворят интересы любознательных зрителей</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="discovery3">
+                                    <div class="text">
+                                        <div class="content-text">
+                                            <h1>Мир знаний</h1>
+                                            <p>Занимательные документальные и научно-популярные фильмы
+                                                о природе, технике, истории, географии, астрономии и физике
+                                                удовлетворят интересы любознательных зрителей</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+
+                    
                 </div>
 
                 <div class="col-lg-12 ">
-                    <div class="bussines ">
+                    <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="bussines ">
                         <div class="image-bussines" style="margin-top: 15px; min-height: 380px; display: flex;">
                             <div class=" content-text" style="width: 100%;">
                                 <div class="text">
@@ -1446,9 +1755,119 @@ $this->title = 'Easy-TV';
                                                 </div>
                                             </div>
                                         </div>
-                            </div></div></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bussines ">
+                        <div class="image-bussines2" style="margin-top: 15px; min-height: 380px; display: flex;">
+                            <div class=" content-text" style="width: 100%;">
+                                <div class="text">
+                                    <div class="text-in-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6" style=" display: flex; align-items: flex-end;">
+                                                    <div class="cont">
+                                                        <h1>Контент для вашего бизнеса</h1>
+                                                        <p>У Вас есть ресторан, бар или отель? Готовы предложить решения для вашего бизнеса.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <div class="back" style="margin: 0 auto 20px auto;">
+                                                        <p style="width: 85%; margin: 0 auto;">Отправте заявку на бизнес-сотрудничество и мы сообщим подробности предложения</p>
+                                                        <input type="email" name="email-bus" placeholder="email@example.com" style="padding: 8px; margin-top: 10px; margin-bottom: 15px;">
+                                                        <br>
+                                                        <?php
+                                                            echo Button::widget([
+                                                                    'label' => 'Отправить',
+                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;', 'data-toggle' => 'modal', 'data-target' => '#message-send'],
+                                                            ]);
+                                                            ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bussines ">
+                        <div class="image-bussines3" style="margin-top: 15px; min-height: 380px; display: flex;">
+                            <div class=" content-text" style="width: 100%;">
+                                <div class="text">
+                                    <div class="text-in-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6" style=" display: flex; align-items: flex-end;">
+                                                    <div class="cont">
+                                                        <h1>Контент для вашего бизнеса</h1>
+                                                        <p>У Вас есть ресторан, бар или отель? Готовы предложить решения для вашего бизнеса.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <div class="back" style="margin: 0 auto 20px auto;">
+                                                        <p style="width: 85%; margin: 0 auto;">Отправте заявку на бизнес-сотрудничество и мы сообщим подробности предложения</p>
+                                                        <input type="email" name="email-bus" placeholder="email@example.com" style="padding: 8px; margin-top: 10px; margin-bottom: 15px;">
+                                                        <br>
+                                                        <?php
+                                                            echo Button::widget([
+                                                                    'label' => 'Отправить',
+                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;', 'data-toggle' => 'modal', 'data-target' => '#message-send'],
+                                                            ]);
+                                                            ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                            </div>
+                          </div>
+                      </div>
+
+                    <!--div class="bussines ">
+                        <div class="image-bussines" style="margin-top: 15px; min-height: 380px; display: flex;">
+                            <div class=" content-text" style="width: 100%;">
+                                <div class="text">
+                                    <div class="text-in-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6" style=" display: flex; align-items: flex-end;">
+                                                    <div class="cont">
+                                                        <h1>Контент для вашего бизнеса</h1>
+                                                        <p>У Вас есть ресторан, бар или отель? Готовы предложить решения для вашего бизнеса.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <div class="back" style="margin: 0 auto 20px auto;">
+                                                        <p style="width: 85%; margin: 0 auto;">Отправте заявку на бизнес-сотрудничество и мы сообщим подробности предложения</p>
+                                                        <input type="email" name="email-bus" placeholder="email@example.com" style="padding: 8px; margin-top: 10px; margin-bottom: 15px;">
+                                                        <br>
+                                                        <?php
+                                                            echo Button::widget([
+                                                                    'label' => 'Отправить',
+                                                                    'options' => ['class' => 'btn', 'style' => 'color: #fff;', 'data-toggle' => 'modal', 'data-target' => '#message-send'],
+                                                            ]);
+                                                            ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
                 </div>
 
         </div>

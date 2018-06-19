@@ -16,7 +16,7 @@
 
 body{
 
-    font-family: Firasans;
+    font-family: Firasans !important;
     color: #333;
 }
 
@@ -60,15 +60,15 @@ nav{
 
 }
 .title-text h1{
-    font-family: MuseoSans;
-    font-size: 36px;
-    line-height: 42px;
+    font-family: MuseoSans ;
+    font-size: 36px !important;
+    line-height: 42px !important;
 }
 
 .title-text p{
     font-family: Firasans;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 20px !important;
+    line-height: 24px !important;
 }
 
 .bounce{
@@ -102,7 +102,7 @@ nav{
 
 
 .why-we h1{
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 19px;
     font-weight: bold;
     text-align: center;
@@ -130,48 +130,155 @@ nav{
 }
 
 
-.child, .girl,.men,.serial,.sport,.music, .music,.xxx,.discovery{
+.child,.child2,.child3,
+.girl,.girl2,.girl3,
+.men,.men2,.men3,
+.serial,.serial2,.serial3,
+.sport,.sport2,.sport3,
+.music, .music2, .music3,
+.xxx,.xxx2,.xxx3,
+.discovery,.discovery2,.discovery3{
     /*width: 540px !important;*/
     height: 336px !important;
     margin: 15px;
 }
 
+/*--child--*/
 .child{
-    background: #111 url("../img/content/Child.png") center center;
+    background: #111 url("../img/content/child/child_1.png") center center;
 }
+
+.child2{
+    background: #111 url("../img/content/child/child_2.png") center center;
+}
+
+.child3{
+    background: #111 url("../img/content/child/child_3.png") center center;
+}
+
+/*--girls--*/
 
 .girl{
-    background: #111 url("../img/content/Girls.png") center center;
+    background: #111 url("../img/content/girl/girl_1.png") center center;
 
 }
+
+.girl2{
+    background: #111 url("../img/content/girl/girl2.png") center center;
+
+}
+
+.girl3{
+    background: #111 url("../img/content/girl/girl3.png") center center;
+
+}
+
+
+/*--men--*/
 .men{
-    background: #111 url("../img/content/Mens.png") center center;
+    background: #111 url("../img/content/men/Mens.png") center center;
 
 }
+
+.men2{
+    background: #111 url("../img/content/men/men2.png") center center;
+
+}
+
+.men3{
+    background: #111 url("../img/content/men/men3.png") center center;
+
+}
+
+
+/*--serial--*/
 .serial{
-    background: #111 url("../img/content/gatsby.png") center center;
+    background: #111 url("../img/content/serial/gatsby.png") center center;
 
 }
+.serial2{
+    background: #111 url("../img/content/serial/film2.png") center center;
+
+}
+.serial3{
+    background: #111 url("../img/content/serial/film3.png") center center;
+
+}
+
+
+/*--sport--*/
 .sport{
-    background: #111 url("../img/content/sport.png") center center;
+    background: #111 url("../img/content/sport/sport.png") center center;
 
 }
+
+.sport2{
+    background: #111 url("../img/content/sport/sport2.png") center center;
+
+}
+
+.sport3{
+    background: #111 url("../img/content/sport/sport3.png") center center;
+
+}
+
+/*--music--*/
 .music{
-    background: #111 url("../img/content/music.png") center center;
+    background: #111 url("../img/content/music/music.png") center center;
 
 }
+
+.music{
+    background: #111 url("../img/content/music/music2.png") center center;
+
+}
+
+.music{
+    background: #111 url("../img/content/music/music3.png") center center;
+
+}
+
+/*--ххх--*/
 .xxx{
-    background: #111 url("../img/content/xxx.png") center center;
+    background: #111 url("../img/content/xxx/xxx.png") center center;
 
 }
-.discovery{
-    background: #111 url("../img/content/discovery.png") center center;
-    /*background: linear-gradient(180deg, rgba(17, 37, 67, 0) 0%, rgba(0, 20, 50, 0.53) 100%);*/
+
+.xxx2{
+    background: #111 url("../img/content/xxx/xxx2.png") center center;
+
 }
+
+.xxx3{
+    background: #111 url("../img/content/xxx/xxx3.png") center center;
+
+}
+
+/*--discovery--*/
+.discovery{
+    background: #111 url("../img/content/discovery/discovery_1.png") center center;
+}
+
+.discovery2{
+    background: #111 url("../img/content/discovery/discovery_2.png") center center;
+}
+
+.discovery3{
+    background: #111 url("../img/content/discovery/discovery_3.png") center center;
+}
+
+
 
 .image-bussines{
 
-    background: #111 url("../img/content/bussines.png") center center;
+    background: #111 url("../img/content/bussines/bussines2.png") center center;
+}
+.image-bussines2{
+    background: #111 url("../img/content/bussines/bussines.png") center center;
+}
+.image-bussines3{
+
+    background: #111 url("../img/content/bussines/bussines3.png") center center;
 }
 .text{
     align-items: flex-end;
@@ -197,7 +304,7 @@ nav{
 .prices{
     color: #333333;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 16px !important;
     list-style-image: url(images/ellipse.png);
     padding:0;
 }
@@ -231,7 +338,7 @@ nav{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 5px;
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 20px !important;
 }
 .join-btn:hover {
     background: #55A462;
@@ -243,7 +350,7 @@ nav{
 }
  .text-btn{
     color: #828282;
-    font-size: 16px;
+    font-size: 16px !important;
     padding-bottom: 10px;
 }
 
@@ -251,7 +358,7 @@ nav{
     padding: 0;
     float: left;
     color: #4F4F4F;
-    font-size: 20px;
+    font-size: 20px !important;
     width: 100%;
     height: 50px;
     background: #fff;
@@ -265,7 +372,7 @@ nav{
     padding: 0;
     float: left;
     color: #4F4F4F;
-    font-size: 20px;
+    font-size: 20px !important;
     min-width: 250px;
     width: 100%;
     background: #fff;
@@ -301,7 +408,7 @@ nav{
     padding: 0;
     padding-left: 15px;
     text-align: left;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .t5 li{
     margin: 0;
@@ -325,7 +432,7 @@ nav{
 
     padding: 0;
     margin-top: 20px; 
-    font-size: 16px;
+    font-size: 16px !important;
     max-width: 635px;
     width: 160px;
     height: 33px;
@@ -401,7 +508,7 @@ nav{
     background-color: #fff;
     margin: 10px 0;
     padding: 35px;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 19px;
 }
 
