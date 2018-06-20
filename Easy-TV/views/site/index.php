@@ -91,24 +91,18 @@ $this->title = 'Easy-TV';
                             <p class="text-center caption">Шаг 1 из 4: Выберите товар</p>
                             <p style="text-align: center; margin-bottom: 40px;">Пробные 2 дня можно использовать через Smart-TV или при существующей приставке.</p>
         
-                            <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 1 месяцев</div>
                                     <div class="t2">999 руб</div>
                                 </button>
-                            </a>
-                            <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 3 месяца</div>
                                     <div class="t2">2997 руб</div>
                                 </button>
-                            </a>
-                            <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 12 месяцев</div>
                                     <div class="t2">11988 руб</div>
                                 </button>
-                            </a>
                             <div class="col-md-12 col-sm-12"
                                  style="text-align: left; font-size: 14px; color: #828282;clear: both;">
                                 <input type="checkbox" name="auto-subscription" value="">автоподписка
@@ -484,11 +478,9 @@ $this->title = 'Easy-TV';
                             <div class="row justify-content-center">
                                 <div class="col-md-6 col-sm-10"
                                      style="text-align: center; max-width: 400px; font-size: 20px; font-weight: 500;">
-                                    <a href="#">
                                         <button type="button" class="step1-btn" style="height: auto;">
                                             <div style="padding: 20px; ">  Бесплатная доставка любой почтовой службой</div>
                                         </button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -600,9 +592,9 @@ $this->title = 'Easy-TV';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-sm-12 further"><a href="#">
+                        <div class="col-md-12 col-sm-12 further">
                                 <button type="button" class="btn button further-btn">Перейти к оплате</button>
-                            </a></div>
+                            </div>
 
                     </div>
                 </div>
@@ -684,24 +676,18 @@ $this->title = 'Easy-TV';
                             <p class="text-center caption">Шаг 1 из 3: Выберите товар</p>
 
 
-                            <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 1 месяцев</div>
                                     <div class="t2">999 руб</div>
                                 </button>
-                            </a>
-                            <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 3 месяца</div>
                                     <div class="t2">2997 руб</div>
                                 </button>
-                            </a>
-                            <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 12 месяцев</div>
                                     <div class="t2">11988 руб</div>
                                 </button>
-                            </a>
                             <div class="col-md-12 col-sm-12"
                                  style="text-align: left; font-size: 14px; color: #828282;clear: both;">
                                 <input type="checkbox" name="auto-subscription" value="">автоподписка
@@ -956,9 +942,9 @@ $this->title = 'Easy-TV';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-sm-12 further"><a href="#">
+                        <div class="col-md-12 col-sm-12 further">
                                 <button type="button" class="btn button further-btn">Перейти к оплате</button>
-                            </a></div>
+                            </div>
 
                     </div>
                 </div>
