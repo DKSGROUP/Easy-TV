@@ -66,7 +66,7 @@ AppAsset::register($this);
 
     echo Button::widget([
         'label' => $endDiv,
-        'options' => ['class' => 'btn btn-outline-success text-center area', 'style' => ' color: #000; background-color: #fff; border: 1px solid #55A462; border-radius: 4px;'],
+        'options' => ['class' => 'btn btn-outline-success text-center area d-flex', 'style' => ' color: #000; background-color: #fff; border: 1px solid #55A462; border-radius: 4px; justify-content:center; margin: 0 auto !important;', "data-toggle"=>"modal", "data-target"=>"#step2_1"],
     ]);
 ?>
 
