@@ -113,7 +113,7 @@ $this->title = 'Easy-TV';
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 ">
                                     
-                                        <button type="button" id="equipment" class="step1-btn2" onclick="disenbl();">
+                                        <button type="button" id="equipment" class="step1-btn2" onclick="enbl();">
                                             <div class="col-md-12 col-sm-12 ">
 
                                                 <div style="float: left;">Оборудование</div>
@@ -145,7 +145,7 @@ $this->title = 'Easy-TV';
                                     
                                 </div>
                             </div>
-                                <button type="button" class="step1-btn" onclick="enbl();">
+                                <button type="button" class="step1-btn" onclick="disenbl();">
                                     <div class="t1">Подключиться через SmartTV</div>
                                     <div class="t2">бесплатно</div>
                                 </button>
