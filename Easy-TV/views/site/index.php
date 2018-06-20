@@ -89,8 +89,8 @@ $this->title = 'Easy-TV';
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-sm-12 step1">
                             <p class="text-center caption">Шаг 1 из 4: Выберите товар</p>
-
-
+                            <p style="text-align: center; margin-bottom: 40px;">Пробные 2 дня можно использовать через Smart-TV или при существующей приставке.</p>
+        
                             <a href="#">
                                 <button type="button" class="step1-btn">
                                     <div class="t1">Подписка на 1 месяцев</div>
@@ -118,8 +118,8 @@ $this->title = 'Easy-TV';
 
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 ">
-                                    <a href="#">
-                                        <button type="button" class="step1-btn2">
+                                    
+                                        <button type="button" id="equipment" class="step1-btn2" onclick="disenbl();">
 
                                             <div class="col-md-12 col-sm-12 ">
 
@@ -149,15 +149,13 @@ $this->title = 'Easy-TV';
                                                 </div>
                                             </ul>
                                         </button>
-                                    </a>
+                                    
                                 </div>
                             </div>
-                            <a href="#">
-                                <button type="button" class="step1-btn">
+                                <button type="button" class="step1-btn" onclick="enbl();">
                                     <div class="t1">Подключиться через SmartTV</div>
                                     <div class="t2">бесплатно</div>
                                 </button>
-                            </a>
                         </div>
                     </div>
 
@@ -322,7 +320,7 @@ $this->title = 'Easy-TV';
                                                 <label>Страна</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input type="text" style="width: 100%" class="form-control " required="" placeholder="">
+                                                <input id="country" type="text" style="width: 100%" class="form-control " required="" placeholder="">
                                             </div>
                                         </div>
                                         </p>
@@ -335,7 +333,7 @@ $this->title = 'Easy-TV';
                                                         <label>Город</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="town" style="width: 100%" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -348,7 +346,7 @@ $this->title = 'Easy-TV';
                                                         <label>Индекс</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="index-t" style="width: 100%" type="text" class="form-control " required=""
                                                                placeholder="хххххх">
                                                     </div>
                                                 </div>
@@ -361,7 +359,7 @@ $this->title = 'Easy-TV';
                                                 <label>Улица</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required="" placeholder="">
+                                                <input id="street" style="width: 100%" type="text" class="form-control " required="" placeholder="">
                                             </div>
                                         </div>
                                         </p>
@@ -374,7 +372,7 @@ $this->title = 'Easy-TV';
                                                         <label>Дом</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="house" style="width: 100%" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -386,7 +384,7 @@ $this->title = 'Easy-TV';
                                                         <label>Квартира</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="apart" style="width: 100%" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -972,8 +970,7 @@ $this->title = 'Easy-TV';
 </div>
 
 <!--Message sent Bussines -->
-<div class="modal fade" id="message-send" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-     aria-hidden="true">
+<div class="modal fade" id="message-send" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header" style="border: none;">
@@ -989,8 +986,7 @@ $this->title = 'Easy-TV';
     </div>
 </div>
 <!--Message send-->
-<div class="modal fade" id="message-send2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-     aria-hidden="true">
+<div class="modal fade" id="message-send2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header" style="border: none;">
@@ -1006,6 +1002,41 @@ $this->title = 'Easy-TV';
     </div>
 </div>
 <!--End Modals -->
+
+<script>
+    function disenbl(){
+                  var elem1 = document.getElementById('country');
+        var elem2 = document.getElementById('town');
+        var elem3 = document.getElementById('index-t');
+        var elem4 = document.getElementById('street');
+        var elem5 = document.getElementById('house');
+        var elem6 = document.getElementById('apart');
+
+            elem1.setAttribute("readonly",'');
+            elem2.setAttribute("readonly",'');
+            elem3.setAttribute("readonly",'');
+            elem4.setAttribute("readonly",'');
+            elem5.setAttribute("readonly",'');
+            elem6.setAttribute("readonly",'');
+    }
+
+    function enbl(){
+
+        var elem1 = document.getElementById('country');
+        var elem2 = document.getElementById('town');
+        var elem3 = document.getElementById('index-t');
+        var elem4 = document.getElementById('street');
+        var elem5 = document.getElementById('house');
+        var elem6 = document.getElementById('apart');
+        elem1.removeAttribute("readonly");
+        elem2.removeAttribute("readonly");
+        elem3.removeAttribute("readonly");
+        elem4.removeAttribute("readonly");
+        elem5.removeAttribute("readonly");
+        elem6.removeAttribute("readonly");
+
+    }
+</script>
 <!--Head-->
 <div class="header"
      style="height: 680px; background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center no-repeat; background-size: 100%">
@@ -1016,12 +1047,14 @@ $this->title = 'Easy-TV';
                     <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
                     <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
                         телевидение, которое работает везде, где есть Интернет</p>
-                    <?php
-                    echo Button::widget([
-                        'label' => 'Присоединиться',
-                        'options' => ['class' => 'btn join', 'style' => 'margin-top:20px;']
-                    ]);
-                    ?>
+                        <a href="#price">
+                            <?php
+                            echo Button::widget([
+                                'label' => 'Бесплатный просмотр',
+                                'options' => ['class' => 'btn join', 'style' => 'margin-top:20px; width: 200px;']
+                            ]);
+                            ?>
+                        </a>
                 </div>
                 <img src="img/header/Polygon.png" class="wow animated bounce">
             </div>
@@ -1706,7 +1739,7 @@ $this->title = 'Easy-TV';
                 <div class="col-md-6 col-sm-12">
                     <div class="text-btn">Я — новый клиент</div>
                     <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step1_1">
-                        Присоедениться к сервису
+                        Попробовать бесплатно 2 дня
                     </button>
                 </div>
 
