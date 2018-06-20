@@ -55,7 +55,7 @@ AppAsset::register($this);
 
     <?php
     echo Nav::widget([
-        'options' => ['class' => ' col-sm-12 col-md-9 navbar navbar-expand-md navbar-nav collapse nav-wid text-center','id'=>'navigation',
+        'options' => ['class' => ' col-sm-12 col-md-9 navbar navbar-expand-lg navbar-nav collapse nav-wid text-center','id'=>'navigation',
             'style' => ' font-size: 15px; '],
         'items' => array(
             array('label' => 'Преимущества', 'url' => ('#why-we')),
@@ -66,7 +66,7 @@ AppAsset::register($this);
 
     echo Button::widget([
         'label' => $endDiv,
-        'options' => ['class' => 'btn btn-outline-success text-center area d-flex', 'style' => ' color: #000; background-color: #fff; border: 1px solid #55A462; border-radius: 4px; justify-content: center; margin: 0 auto !important;'],
+        'options' => ['class' => 'btn btn-outline-success text-center area', 'style' => ' color: #000; background-color: #fff; border: 1px solid #55A462; border-radius: 4px;'],
     ]);
 ?>
 
