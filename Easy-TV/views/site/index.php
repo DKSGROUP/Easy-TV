@@ -28,7 +28,7 @@ $this->title = 'Easy-TV';
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 600px; overflow-y: scroll; overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll; overflow-x: hidden;">
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
@@ -158,11 +158,11 @@ $this->title = 'Easy-TV';
 
 
                 <div class="row justify-content-center log">
-                    <div class="col-md-4 col-sm-10">
+                    <div class="col-md-5 col-sm-10">
                         <p>Вас пригласил друг? Введите его логин:
                             <input type="text" class="form-control" required="" placeholder="login"></p>
                     </div>
-                    <div class="col-md-4 col-sm-10"
+                    <div class="col-md-5 col-sm-10"
                          style="text-align: right; font-size: 30px; font-weight: bold; color: #55A462;">Сумма: 5998 руб</div>
 
                     <div class="col-md-12 col-sm-12 further"><a href="#step1_2">
@@ -192,7 +192,7 @@ $this->title = 'Easy-TV';
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 600px; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
@@ -417,7 +417,7 @@ $this->title = 'Easy-TV';
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 600px; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
@@ -515,10 +515,10 @@ $this->title = 'Easy-TV';
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 600px; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
 
-                        <div class="col-md-11 col-sm-10 prices">
+                        <div class="col-md-12 col-sm-10 prices">
                             <p class="text-center caption">Цены и условия</p>
                             <div class="row justify-content-center">
                                 <div class="col-md-8 col-sm-10">
@@ -573,7 +573,7 @@ $this->title = 'Easy-TV';
                     </div>
                     <div class="row justify-content-center step4">
 
-                        <div class="col-md-10 col-sm-10" >
+                        <div class="col-md-12 col-sm-10" >
                             <p class="text-center caption">Шаг 4 из 4: Подтверждение заказа</p>
 
                             <div class="row ">
@@ -620,7 +620,7 @@ $this->title = 'Easy-TV';
                 </button>
             </div>
             <div class="modal-body">
-                <div class="container" style="height: 600px; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
@@ -735,7 +735,7 @@ $this->title = 'Easy-TV';
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 600px; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
@@ -875,7 +875,7 @@ $this->title = 'Easy-TV';
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 600px; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
