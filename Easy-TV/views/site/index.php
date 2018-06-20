@@ -120,7 +120,6 @@ $this->title = 'Easy-TV';
                                 <div class="col-md-12 col-sm-12 ">
                                     
                                         <button type="button" id="equipment" class="step1-btn2" onclick="disenbl();">
-
                                             <div class="col-md-12 col-sm-12 ">
 
                                                 <div style="float: left;">Оборудование</div>
@@ -128,11 +127,11 @@ $this->title = 'Easy-TV';
                                             </div>
 
                                             <p class="t5" style="clear: both;"><b>Комплект поставки:</b></p>
-                                            <ul style="padding: 0;">
 
-                                                <div class="row">
+
+                                                    <ul style="padding: 0;">
                                                     <div class="col-md-6 col-sm-12 t5"
-                                                         style="min-width: 300px; float: left;">
+                                                         style="min-width: 300px; float: left; padding-bottom: 20px;">
 
                                                         <li>- сетевой мультимедийный медиаплеер.</li>
                                                         <li>- кабель HDMI</li>
@@ -140,13 +139,13 @@ $this->title = 'Easy-TV';
                                                         <li>- адаптер питания 5V 1.5А.</li>
                                                     </div>
                                                     <div class="col-md-6 col-sm-12 t5"
-                                                         style="min-width: 300px; float: left;">
+                                                         style="min-width: 300px; float: left; padding-bottom: 20px;">
                                                         <li>- программируемый пульт ДУ.</li>
                                                         <li>- элементы питания АА - 2шт.</li>
                                                         <li>- кабель Ethernet.</li>
                                                         <li>- руководство по быстрой установке</li>
                                                     </div>
-                                                </div>
+
                                             </ul>
                                         </button>
                                     
