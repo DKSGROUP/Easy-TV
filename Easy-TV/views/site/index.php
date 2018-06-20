@@ -1016,12 +1016,14 @@ $this->title = 'Easy-TV';
                     <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
                     <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
                         телевидение, которое работает везде, где есть Интернет</p>
-                    <?php
-                    echo Button::widget([
-                        'label' => 'Присоединиться',
-                        'options' => ['class' => 'btn join', 'style' => 'margin-top:20px;']
-                    ]);
-                    ?>
+                        <a href="#price">
+                            <?php
+                            echo Button::widget([
+                                'label' => 'Бесплатный просмотр',
+                                'options' => ['class' => 'btn join', 'style' => 'margin-top:20px; width: 200px;']
+                            ]);
+                            ?>
+                        </a>
                 </div>
                 <img src="img/header/Polygon.png" class="wow animated bounce">
             </div>
@@ -1706,7 +1708,7 @@ $this->title = 'Easy-TV';
                 <div class="col-md-6 col-sm-12">
                     <div class="text-btn">Я — новый клиент</div>
                     <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step1_1">
-                        Присоедениться к сервису
+                        Попробовать бесплатно 2 дня
                     </button>
                 </div>
 
