@@ -166,7 +166,7 @@ $this->title = 'Easy-TV';
                 <div class="row justify-content-center log">
                     <div class="col-md-5 col-sm-10">
                         <p>Вас пригласил друг? Введите его логин:
-                            <input type="text" class="form-control" required="" placeholder="login"></p>
+                            <input type="text" class="form-control" required="" placeholder="login" style="width: 100%;"></p>
                     </div>
                     <div class="col-md-5 col-sm-10"
                          style="text-align: right; font-size: 30px; font-weight: bold; color: #55A462;">Сумма: 5998 руб</div>
