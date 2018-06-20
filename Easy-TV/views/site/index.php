@@ -152,6 +152,12 @@ $this->title = 'Easy-TV';
                                     </a>
                                 </div>
                             </div>
+                            <a href="#">
+                                <button type="button" class="step1-btn">
+                                    <div class="t1">Подключиться через SmartTV</div>
+                                    <div class="t2">бесплатно</div>
+                                </button>
+                            </a>
                         </div>
                     </div>
 
@@ -250,7 +256,7 @@ $this->title = 'Easy-TV';
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-md-12 col-sm-12 step2">
+                        <div class="col-md-11 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
                             <form>
                                 <div class="row justify-content-center ">
