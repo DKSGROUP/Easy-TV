@@ -1698,7 +1698,7 @@ $this->title = 'Easy-TV';
                             </div>
                         </div>
                     </ul>
-                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
+                    <div class="comment">Если Вам не понравится контент, набор и количество каналов – мы вернем Вам деньги!</div>
                 </div>
 
                 <div class="col-md-3 col-sm-10 img-price">
