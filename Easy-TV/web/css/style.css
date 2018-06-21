@@ -368,6 +368,10 @@ nav{
     line-height: 100%;
     border-radius: 10px;
 }
+
+.smart{
+    height: 90px !important;
+}
 .step1{text-align: center;}
 .step1-btn2{
     padding: 0;
@@ -492,6 +496,17 @@ nav{
 .step2 label{
     font-weight: 500;
     float: right;
+}
+
+.back-btn{
+    border:1px solid #55A462 !important; 
+    background-color: #fff !important; 
+    color: #55A462 !important;
+}
+.back-btn:hover{
+    border:1px solid #55A462  !important; 
+    background-color: #55A462 !important; 
+    color: #fff !important;
 }
 /*-----------------------*/
 

@@ -30,39 +30,7 @@ $this->title = 'Easy-TV';
 
                 <div class="container" style="height: 80vh; overflow-y: scroll; overflow-x: hidden;">
                     <div class="row justify-content-center">
-
-                        <div class="col-md-11 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                        <div class="col-md-11 col-sm-10 prices">                    
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -91,21 +59,22 @@ $this->title = 'Easy-TV';
                             <p class="text-center caption">Шаг 1 из 4: Выберите товар</p>
                             <p style="text-align: center; margin-bottom: 40px;">Пробные 2 дня можно использовать через Smart-TV или при существующей приставке.</p>
         
-                                <button type="button" class="step1-btn">
-                                    <div class="t1">Подписка на 1 месяцев</div>
+                                <button type="button" class="step1-btn mounth" id="oneMonth" value="999" onclick="one(oneMonth.value);sum(); oneMonth.style.backgroundColor='rgba(85, 164, 98,0.4)'; threeMonth.style.backgroundColor='';twelweMonth.style.backgroundColor=''; counpMN.innerHTML = 1; priceNew.innerHTML =oneMonth.value; ">
+                                    <div class="t1">Подписка на 1 месяц</div>
                                     <div class="t2">999 руб</div>
                                 </button>
-                                <button type="button" class="step1-btn">
+                                <button type="button" class="step1-btn mounth" id="threeMonth" value="2997" onclick="one(threeMonth.value);sum();threeMonth.style.backgroundColor='rgba(85, 164, 98,0.4)';oneMonth.style.backgroundColor='';twelweMonth.style.backgroundColor='';counpMN.innerHTML = 3; priceNew.innerHTML =threeMonth.value;  ">
                                     <div class="t1">Подписка на 3 месяца</div>
                                     <div class="t2">2997 руб</div>
                                 </button>
-                                <button type="button" class="step1-btn">
+                                <button type="button" class="step1-btn mounth" id="twelweMonth" value="11988" onclick="one(twelweMonth.value);sum();oneMonth.style.backgroundColor=''; threeMonth.style.backgroundColor='';twelweMonth.style.backgroundColor='rgba(85, 164, 98,0.4)';counpMN.innerHTML = 12; priceNew.innerHTML =twelweMonth.value; ">
                                     <div class="t1">Подписка на 12 месяцев</div>
                                     <div class="t2">11988 руб</div>
                                 </button>
                             <div class="col-md-12 col-sm-12"
-                                 style="text-align: left; font-size: 14px; color: #828282;clear: both;">
-                                <input type="checkbox" name="auto-subscription" value="">автоподписка
+                                 style="text-align: left; font-size: 14px; color: #828282;clear: both; margin-left: 10px;">
+                                <input type="checkbox" class="form-check-input" id="autosubs">
+                                <label class="form-check-label" for="autosubs" style="font-size: 16px;">Автоподписка</label>
                             </div>
 
                             <p class="plus"><img src="img/images/plus.png"></p>
@@ -113,14 +82,14 @@ $this->title = 'Easy-TV';
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 ">
                                     
-                                        <button type="button" id="equipment" class="step1-btn2" onclick="enbl();">
+                                        <button type="button" id="equipment" class="step1-btn2" value="4999" onclick="enbl();two(equipment.value);sum(); equipment.style.backgroundColor='rgba(85, 164, 98,0.4)'; sale.style.backgroundColor=''; checkThreeNew.style.display = 'none';">
                                             <div class="col-md-12 col-sm-12 ">
 
                                                 <div style="float: left;">Оборудование</div>
                                                 <div style="float:right;">4999 руб</div>
                                             </div>
-
-                                            <p class="t5" style="clear: both;"><b>Комплект поставки:</b></p>
+                                            
+                                            <p class="t5" style="clear: both;" style="font-size: 0;"><b>Комплект поставки:</b></p>
 
 
                                                     <ul style="padding: 0;">
@@ -145,13 +114,20 @@ $this->title = 'Easy-TV';
                                     
                                 </div>
                             </div>
-                                <button type="button" class="step1-btn" onclick="disenbl();">
-                                    <div class="t1">Подключиться через SmartTV</div>
+                                <button type="button" class="step1-btn smart" id="sale" value="0" onclick="disenbl();two(sale.value);sum();equipment.style.backgroundColor=''; sale.style.backgroundColor='rgba(85, 164, 98,0.4)';checkTwoNew.style.display = 'none';">
+                                    <div class="t1" style="margin-top: 10px;">Подключиться через SmartTV
+                                        <br>
+                                        <a href="Инструкция.txt" download style="color: #55A462;">
+                                        <p style="clear: both;font-size: 14px; text-align: left !important;"><b>Скачать инструкцию</b></p></a>
+                                        
+                                    </div>
                                     <div class="t2">бесплатно</div>
+
                                 </button>
                         </div>
                     </div>
 
+           
 
 
                 <div class="row justify-content-center log">
@@ -160,12 +136,13 @@ $this->title = 'Easy-TV';
                             <input type="text" class="form-control" required="" placeholder="login" style="width: 100%;"></p>
                     </div>
                     <div class="col-md-5 col-sm-10"
-                         style="text-align: right; font-size: 30px; font-weight: bold; color: #55A462;">Сумма: 5998 руб</div>
+                         style="text-align: right; font-size: 30px; font-weight: bold; color: #55A462;">Сумма: <label id="lab">0</label> руб</div>
 
                     <div class="col-md-12 col-sm-12 further"><a href="#step1_2">
                             <button type="button" class="btn button further-btn" data-toggle="modal"
                                     data-target="#step1_2" data-dismiss="modal">Далее
                             </button>
+                            
                         </a></div>
 
                 </div>
@@ -177,7 +154,7 @@ $this->title = 'Easy-TV';
 </div>
 </div>
 </div>
-
+ 
 <!-- Modal  step1_2-->
 <div class="modal fade" id="step1_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -191,39 +168,7 @@ $this->title = 'Easy-TV';
 
                 <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
-
-                        <div class="col-md-11 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                        <div class="col-md-11 col-sm-10 prices">                    
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -299,7 +244,7 @@ $this->title = 'Easy-TV';
                                             </div>
                                             <div class="col-md-8 col-sm-8">
                                                 <input style="width: 100%" type="text" class="form-control " required=""
-                                                       placeholder="+7(000) 999-99-99">
+                                                       placeholder="(000) 999-99-99">
                                             </div>
                                         </div>
                                         </p>
@@ -391,9 +336,12 @@ $this->title = 'Easy-TV';
                             </form>
 
                             <div class="col-md-12 col-sm-12 further"><a href="#step1_3">
+                                    <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_1" data-dismiss="modal" >Назад
+                                    </button>
                                     <button type="button" class="btn button further-btn" data-toggle="modal"
                                             data-target="#step1_3" data-dismiss="modal">Далее
                                     </button>
+                                    
                                 </a></div>
 
                         </div>
@@ -418,36 +366,7 @@ $this->title = 'Easy-TV';
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                            
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -487,8 +406,9 @@ $this->title = 'Easy-TV';
 
                     </div>
                     <div class="col-md-12 col-sm-12 further"><a href="#step1_4">
-                            <button type="button" class="btn button further-btn" data-toggle="modal"
-                                    data-target="#step1_4" data-dismiss="modal">Далее
+                            <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_2" data-dismiss="modal" >Назад
+                                    </button>
+                            <button type="button" class="btn button further-btn" data-toggle="modal"                                     data-target="#step1_4" data-dismiss="modal">Далее
                             </button>
                         </a></div>
 
@@ -512,38 +432,8 @@ $this->title = 'Easy-TV';
 
                 <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
-
                         <div class="col-md-12 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                            
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -566,19 +456,20 @@ $this->title = 'Easy-TV';
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center step4">
+                    <div class="row justify-content-center">
 
                         <div class="col-md-12 col-sm-10" >
                             <p class="text-center caption">Шаг 4 из 4: Подтверждение заказа</p>
 
                             <div class="row ">
-                                <div class="col-md-4 col-sm-12 bord">
+                                <div class="col-md-6 col-sm-12 bord">
                                     <p style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;" >Товар</p>
-                                    <p>1. Подписка на 1 месяц - 999 руб</p>
-                                    <p>2. Оборудование - 4999 руб</p>
-                                    <p>Сумма - 5998 руб</p>
+                                    <p id="checkOneNew">Подписка на <label id="counpMN"> </label> месяц - <label id="priceNew">1</label> руб</p>
+                                    <p id="checkTwoNew"> Оборудование - 4999 руб</p>
+                                    <p id="checkThreeNew"> Smart - TV - 0 руб</p>
+                                    <p style="font-size: 20px !important; margin-top: 15px;"><b>Сумма - <label id="lab2" style="font-size: 22px;color: #55A462;">0</label> руб</b></p>
                                 </div>
-                                <div class="col-md-4 col-sm-12 bord">
+                                <div class="col-md-6 col-sm-12 bord">
                                     <p  style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;" >Личная информация</p>
                                     <p>ФИО, Логин, </p>
                                     <p>Почта, Номер,</p>
@@ -593,6 +484,7 @@ $this->title = 'Easy-TV';
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 further">
+                                <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_3" data-dismiss="modal" >Назад</button>
                                 <button type="button" class="btn button further-btn">Перейти к оплате</button>
                             </div>
 
@@ -619,36 +511,7 @@ $this->title = 'Easy-TV';
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                            
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -676,33 +539,46 @@ $this->title = 'Easy-TV';
                             <p class="text-center caption">Шаг 1 из 3: Выберите товар</p>
 
 
-                                <button type="button" class="step1-btn">
-                                    <div class="t1">Подписка на 1 месяцев</div>
+                                <button type="button" class="step1-btn" id="st1" value ="999" onclick="price2.innerHTML = st1.value;
+                                price3.innerHTML = st1.value;
+
+                                countM.innerHTML = 1; st1.style.backgroundColor='rgba(85, 164, 98,0.4)';st2.style.backgroundColor='';st3.style.backgroundColor='';">
+                                    <div class="t1">Подписка на 1 месяц</div>
                                     <div class="t2">999 руб</div>
                                 </button>
-                                <button type="button" class="step1-btn">
+                                <button type="button" class="step1-btn" id="st2" value="2997" onclick="price2.innerHTML = st2.value;
+                                price3.innerHTML = st2.value; 
+                                price4.innerHTML = st2.value; 
+                                countM.innerHTML = 3;st1.style.backgroundColor='';st2.style.backgroundColor='rgba(85, 164, 98,0.4)';st3.style.backgroundColor='';">
                                     <div class="t1">Подписка на 3 месяца</div>
                                     <div class="t2">2997 руб</div>
                                 </button>
-                                <button type="button" class="step1-btn">
+                                <button type="button" class="step1-btn" id="st3" value="11988" onclick="price2.innerHTML = st3.value;
+                                price3.innerHTML = st3.value;
+                                price4.innerHTML = st3.value; 
+
+                                countM.innerHTML = 12;st1.style.backgroundColor='';st2.style.backgroundColor='';st3.style.backgroundColor='rgba(85, 164, 98,0.4)';">
                                     <div class="t1">Подписка на 12 месяцев</div>
                                     <div class="t2">11988 руб</div>
                                 </button>
+
                             <div class="col-md-12 col-sm-12"
-                                 style="text-align: left; font-size: 14px; color: #828282;clear: both;">
-                                <input type="checkbox" name="auto-subscription" value="">автоподписка
+                                 style="text-align: left; font-size: 14px; color: #828282;clear: both; margin-left: 10px;">
+                                <input type="checkbox" class="form-check-input" id="autosubs">
+                                <label class="form-check-label" for="autosubs" style="font-size: 16px;">Автоподписка</label>
                             </div>
 
 
                             <div class="row ">
                                 <div class="col-md-6 col-sm-12 further" style="text-align: left;"><a href="#step2_2">
+                                        
                                         <button type="button" class="btn button further-btn" data-toggle="modal"
                                                 data-target="#step2_2" data-dismiss="modal">Далее
                                         </button>
                                     </a></div>
 
                                 <div class="col-md-6 col-sm-12"
-                                     style="text-align: right; font-size: 30px; font-weight: bold; color: #55A462;">Сумма: 5998 руб</div>
+                                     style="text-align: right; font-size: 30px; font-weight: bold; color: #55A462;">Сумма: <label id="price2">0</label> руб</div>
                             </div>
                         </div>
                     </div>
@@ -728,36 +604,7 @@ $this->title = 'Easy-TV';
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                            
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -833,7 +680,7 @@ $this->title = 'Easy-TV';
                                             </div>
                                             <div class="col-md-8 col-sm-8">
                                                 <input type="text" style="width: 100%" class="form-control " required=""
-                                                       placeholder="+7(000) 999-99-99">
+                                                       placeholder="(000) 999-99-99">
                                             </div>
                                         </div>
                                         </p>
@@ -842,6 +689,7 @@ $this->title = 'Easy-TV';
                             </form>
                         </div>
                         <div class="col-md-12 col-sm-12 further"><a href="#step2_3">
+                                <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step2_1" data-dismiss="modal" >Назад</button>
                                 <button type="button" class="btn button further-btn" data-toggle="modal"
                                         data-target="#step2_3" data-dismiss="modal">Далее</button>
                             </a></div>
@@ -868,36 +716,7 @@ $this->title = 'Easy-TV';
                     <div class="row justify-content-center">
 
                         <div class="col-md-11 col-sm-10 prices">
-                            <p class="text-center caption">Цены и условия</p>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-sm-10">
-                                    <div>
-                                            Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
-                                            сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
-                                            Теперь все последние новинки кино всегда с вами.
-                                        </div>
-
-                                    <ul>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-5 col-sm-10">
-                                                <li>Гарантия на оборудование</li>
-                                                <li>Не кардшеринг</li>
-                                                <li>Не нужна спутниковая тарелка</li>
-                                            </div>
-                                            <div class="col-md-7 col-sm-10">
-                                                <li>Более 1000 каналов в отличном качестве</li>
-                                                <li>Никаких дополнительных платежей</li>
-                                                <li>Множество полезных функций</li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-10 img-price">
-                                    <img src="img/images/price.png"></p>
-                                </div>
-                            </div>
+                            
                             <div class="row text-center">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="text-btn">Я — новый клиент</div>
@@ -928,9 +747,8 @@ $this->title = 'Easy-TV';
                             <div class="row ">
                                 <div class="col-md-6 col-sm-12 bord">
                                     <p style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;">Товар</p>
-                                    <p>1. Подписка на 1 месяц - 999 руб</p>
-                                    <p>2. Оборудование - 4999 руб</p>
-                                    <p>Сумма - 5998 руб</p>
+                                    <p id="checkOne"> Подписка на <label id="countM">1</label> месяц(a/eв) - <label id="price3">0</label> руб</p>
+                                    <p style="font-size: 20px !important; margin-top: 15px;"><b>Сумма - <label id="price4"  style="font-size: 22px;color: #55A462;">0</label> руб</b></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12 bord">
                                     <p style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;">Личная информация</p>
@@ -943,6 +761,7 @@ $this->title = 'Easy-TV';
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 further">
+                                <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step2_2" data-dismiss="modal" >Назад</button>
                                 <button type="button" class="btn button further-btn">Перейти к оплате</button>
                             </div>
 
@@ -1022,6 +841,39 @@ $this->title = 'Easy-TV';
 
     }
 </script>
+
+<script>
+                    var first=0;
+                    var second = 0;
+                    function one(a){
+                        var a = a;
+                        console.log(a);
+                        document.getElementById('lab').innerHTML = a;
+                        document.getElementById('lab2').innerHTML = a;
+                        return first = (+a);
+                        var result = +first + +second;
+                        
+                    }
+
+                    function two(b){
+                        var b = b;
+                        console.log(b);
+                        document.getElementById('lab').innerHTML = b;
+                        document.getElementById('lab2').innerHTML = b;
+
+                        return second= (+b);
+                        var result = +first + +second;
+                    }
+
+                    function sum() {
+                        var result = +first + +second;
+                        document.getElementById('lab').innerHTML = result;
+                        document.getElementById('lab2').innerHTML = result;
+
+                        return result;
+                    }
+
+            </script>
 <!--Head-->
 <div class="header"
      style="height: 680px; background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center no-repeat; background-size: 100%">
@@ -1100,12 +952,12 @@ $this->title = 'Easy-TV';
 </div>
 <!--Presentation-->
 <div class="presentation" style="background-color: #F8FAFD;">
-    <div class="container" style="padding-top: 70px;padding-bottom: 80px;">
+    <div class="container" style="padding-top: 60px;padding-bottom: 80px;">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-12 text-center text-lg-right">
-                <h1 style="font-size: 16px;font-weight: bold;">Хотите узнать больше?</h1>
+            <div class="col-lg-6 col-md-12 col-12 text-center text-lg-right d-flex justify-content-lg-end justify-content-center" style="align-items: center; margin-top: 10px;">
+                <h1 style="font-size: 16px;font-weight: bold; margin:0;">Хотите узнать больше?</h1>
             </div>
-            <div class="col-lg-6 col-md-12 col-12 text-center text-lg-left">
+            <div class="col-lg-6 col-md-12 col-12 text-center text-lg-left" style="margin-top: 10px;">
                 <a href="Easy-TV.pdf" download>
                     <?php
                     echo Button::widget([
@@ -1793,9 +1645,11 @@ $this->title = 'Easy-TV';
             </div>
 
             <div class="col-12 text-center" style="margin-top: 65px;">
-                <h1>Партнерская программа</h1>
-                <p style="margin: 35px 0;">Ищем своего партнера в каждой стране</p>
-                <p style=" width: 68%; margin:0 auto 65px auto;">Будем рады сотрудничать с Вами по агентской схеме, в
+                <h1 style="margin-bottom: 35px;">Партнерская программа</h1>
+                <hr style="border-bottom: 2px solid #55A462; width: 30%;margin: 0 auto;">
+                <p style="margin: 10px 0 10px 0; font-size: 20px;">Ищем своего партнера в каждой стране</p>
+                <hr style="border-bottom: 2px solid #55A462; width: 30%;margin: 0 auto;">
+                <p style=" width: 68%; margin:35px auto 65px auto;">Будем рады сотрудничать с Вами по агентской схеме, в
                     рамках которой Вы работаете
                     только над привлечением клиентов и согласовываете условия подключения.
                     Всю работу по регистрации мерчанта в платежных системах, заключение договора,
@@ -1839,9 +1693,11 @@ $this->title = 'Easy-TV';
             <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
                 <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
             </div>
-            <div class="col-md-4 text-md-right text-center"></div>
+            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
+                <label for="textar"><h1>Ваше сообщение</h1></label>
+            </div>
             <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
-                <textarea placeholder="Ваше сообщение" style="margin: 5px 0; padding: 8px;"></textarea>
+                <textarea placeholder="Ваше сообщение" style="margin: 5px 0; padding: 8px;" name="textar"></textarea>
             </div>
             <div class="col-12 text-center" style="margin-top: 30px; margin-bottom: 35px; ">
                 <?php
