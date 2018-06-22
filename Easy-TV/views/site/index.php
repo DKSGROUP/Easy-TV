@@ -15,7 +15,55 @@ $this->title = 'Easy-TV';
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
+<?php
+try {
+    // Получение экземпляра модели для работы с аккаунтом
+    $amo = Yii::$app->amocrm->getClient();
+    $name = 'ФИОкастом';
 
+    $account = $amo->account;
+
+    // или прямо
+    $account = Yii::$app->amocrm->account;
+
+    // Вывод информации об аккаунте
+    //print_r($account->apiCurrent());
+
+    // Получение экземпляра модели для работы с контактами
+    $contact = $amo->contact;
+
+    // Заполнение полей модели
+    $contact['name'] = $name;
+    $contact['request_id'] = '123456789';
+    //$contact['date_create'] = '-2 DAYS';
+    $contact['responsible_user_id'] = $amo->fields['ResponsibleUserId'];
+    $contact['company_name'] = 'ООО Тестовая компания';
+    $contact['tags'] = ['тест1', 'тест2', 'test'];
+    $contact->addCustomField(123, [
+        ['+79261112233', 'WORK'],
+    ]);
+    // Добавление нового контакта и получение его ID
+    $id = 0;
+    $unique = true;
+    foreach ($amo->contact->apiList(['query' => $name]) as $item){
+        if ($item['name'] == $name)
+        {
+            $unique = false;
+            $id = $item['id'];
+            break;
+        }
+    }
+    if ($unique) {
+        echo 'UNIQUE';
+        print_r($contact->apiAdd());
+    } else {
+        $contact->apiUpdate((int)$id, 'now');
+    }
+
+} catch (\AmoCRM\Exception $e) {
+    printf('Error (%d): %s' . PHP_EOL, $e->getCode(), $e->getMessage());
+}
+?>
 
 <!-- Modal step1_1-->
 <div class="modal fade" id="step1_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -484,10 +532,9 @@ $this->title = 'Easy-TV';
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 further">
-                                <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_3" data-dismiss="modal" >Назад</button>
-                                <button type="button" class="btn button further-btn">Перейти к оплате</button>
-                            </div>
-
+                            <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_3" data-dismiss="modal" >Назад</button>
+                            <button type="button" class="btn button further-btn">Перейти к оплате</button>
+                        </div>
                     </div>
                 </div>
 

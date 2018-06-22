@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9f2c4096daae319bd4037d6bc0d0b3e",
+    "content-hash": "556d6f09e504694c943932c5e1b71fb4",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -108,7 +108,7 @@
             "version": "v1.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bestiejs/punycode.js.git",
+                "url": "git@github.com:bestiejs/punycode.js.git",
                 "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
             },
             "dist": {
@@ -200,6 +200,98 @@
                 "markdown-extra"
             ],
             "time": "2017-07-16T21:13:23+00:00"
+        },
+        {
+            "name": "dotzero/amocrm",
+            "version": "v0.3.28",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dotzero/amocrm-php.git",
+                "reference": "d9f818acaf010fffdfe095f15c5e0ee4587a9385"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dotzero/amocrm-php/zipball/d9f818acaf010fffdfe095f15c5e0ee4587a9385",
+                "reference": "d9f818acaf010fffdfe095f15c5e0ee4587a9385",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AmoCRM\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "dotzero",
+                    "email": "mail@dotzero.ru"
+                }
+            ],
+            "description": "Удобный и быстрый клиент для работы с API amoCRM",
+            "keywords": [
+                "amoCRM",
+                "api",
+                "crm"
+            ],
+            "time": "2018-04-15T06:32:36+00:00"
+        },
+        {
+            "name": "dotzero/yii2-amocrm",
+            "version": "v0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dotzero/yii2-amocrm.git",
+                "reference": "a94052d5e264667416fa866d1e3ea5aa618f9e21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dotzero/yii2-amocrm/zipball/a94052d5e264667416fa866d1e3ea5aa618f9e21",
+                "reference": "a94052d5e264667416fa866d1e3ea5aa618f9e21",
+                "shasum": ""
+            },
+            "require": {
+                "dotzero/amocrm": "0.3.*",
+                "php": ">=5.5.0",
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii\\amocrm\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "dotzero",
+                    "email": "mail@dotzero.ru"
+                }
+            ],
+            "description": "Расширение для Yii Framework 2 реализующее клиент для работы с API amoCRM",
+            "keywords": [
+                "amoCRM",
+                "api",
+                "crm",
+                "extension",
+                "yii2"
+            ],
+            "time": "2018-01-15T10:09:24+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",

@@ -56,7 +56,19 @@ $config = [
         'languagepicker' => [
             'class' => 'lajax\languagepicker\Component',
             'languages' => ['en', 'de', 'fr']               // List of available languages
-        ]
+        ],
+        'amocrm' => [
+            'class' => 'yii\amocrm\Client',
+            'subdomain' => 'temnyip.amocrm.ru', // Персональный поддомен на сайте amoCRM
+            'login' => 'temnyip@mail.ru', // Логин на сайте amoCRM
+            'hash' => '2723732e3646c89c27cac5c367243de1b58c932a', // Хеш на сайте amoCRM
+
+            // Для хранения ID полей можно воспользоваться хелпером
+            'fields' => [
+                'StatusId' => 10525225,
+                'ResponsibleUserId' => 697344,
+            ],
+        ],
 
     ],
     'params' => $params,

@@ -57,4 +57,13 @@ return array (
       '@lajax/languagepicker' => $vendorDir . '/lajax/yii2-language-picker',
     ),
   ),
+  'dotzero/yii2-amocrm' => 
+  array (
+    'name' => 'dotzero/yii2-amocrm',
+    'version' => '0.2.2.0',
+    'alias' => 
+    array (
+      '@yii/amocrm' => $vendorDir . '/dotzero/yii2-amocrm/src',
+    ),
+  ),
 );

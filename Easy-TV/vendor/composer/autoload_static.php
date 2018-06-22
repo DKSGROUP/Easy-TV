@@ -25,6 +25,7 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
+            'yii\\amocrm\\' => 11,
             'yii\\' => 4,
         ),
         'p' => 
@@ -80,6 +81,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
         ),
+        'A' => 
+        array (
+            'AmoCRM\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -106,6 +111,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         'yii\\bootstrap\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap',
+        ),
+        'yii\\amocrm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dotzero/yii2-amocrm/src',
         ),
         'yii\\' => 
         array (
@@ -205,6 +214,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         array (
             0 => __DIR__ . '/..' . '/codeception/base/src/Codeception',
             1 => __DIR__ . '/..' . '/codeception/stub/src',
+        ),
+        'AmoCRM\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dotzero/amocrm/src',
         ),
     );
 
@@ -407,7 +420,7 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         'PHPUnit_Util_Configuration' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Configuration.php',
         'PHPUnit_Util_ConfigurationGenerator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/ConfigurationGenerator.php',
         'PHPUnit_Util_ErrorHandler' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/ErrorHandler.php',
-        'PHPUnit_Util_Fileloader' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Fileloader.php',
+        'PHPUnit_Util_Fileloader' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/FileLoader.php',
         'PHPUnit_Util_Filesystem' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Filesystem.php',
         'PHPUnit_Util_Filter' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Filter.php',
         'PHPUnit_Util_Getopt' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Getopt.php',
@@ -431,7 +444,7 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         'PHPUnit_Util_TestDox_ResultPrinter_XML' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TestDox/ResultPrinter/XML.php',
         'PHPUnit_Util_TestSuiteIterator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TestSuiteIterator.php',
         'PHPUnit_Util_Type' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Type.php',
-        'PHPUnit_Util_XML' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XML.php',
+        'PHPUnit_Util_XML' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml.php',
         'PHP_Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'PHP_Token' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_TokenWithScope' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
