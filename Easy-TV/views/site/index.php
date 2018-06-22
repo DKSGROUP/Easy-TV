@@ -130,7 +130,7 @@ try {
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 ">
                                     
-                                        <button type="button" id="equipment" class="step1-btn2" value="4999" onclick="enbl();two(equipment.value);sum(); equipment.style.backgroundColor='rgba(85, 164, 98,0.4)'; sale.style.backgroundColor=''; checkThreeNew.style.display = 'none';">
+                                        <button type="button" id="equipment" class="step1-btn2" value="4999" onclick="enbl();two(equipment.value);sum(); equipment.style.backgroundColor='rgba(85, 164, 98,0.4)'; sale.style.backgroundColor=''; checkThreeNew.style.display = 'none';checkTwoNew.style.display = 'block';">
                                             <div class="col-md-12 col-sm-12 ">
 
                                                 <div style="float: left;">Оборудование</div>
@@ -162,7 +162,7 @@ try {
                                     
                                 </div>
                             </div>
-                                <button type="button" class="step1-btn smart" id="sale" value="0" onclick="disenbl();two(sale.value);sum();equipment.style.backgroundColor=''; sale.style.backgroundColor='rgba(85, 164, 98,0.4)';checkTwoNew.style.display = 'none';">
+                                <button type="button" class="step1-btn smart" id="sale" value="0" onclick="disenbl();two(sale.value);sum();equipment.style.backgroundColor=''; sale.style.backgroundColor='rgba(85, 164, 98,0.4)';checkTwoNew.style.display = 'none'; checkThreeNew.style.display='block'; ">
                                     <div class="t1" style="margin-top: 10px;">Подключиться через SmartTV
                                         <br>
                                         <a href="Инструкция.txt" download style="color: #55A462;">
