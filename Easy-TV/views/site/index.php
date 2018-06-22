@@ -67,8 +67,8 @@ try {
 
 <!-- Modal step1_1-->
 <div class="modal fade" id="step1_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -188,7 +188,7 @@ try {
 
                     <div class="col-md-12 col-sm-12 further"><a href="#step1_2">
                             <button type="button" class="btn button further-btn" data-toggle="modal"
-                                    data-target="#step1_2" data-dismiss="modal">Далее
+                                    data-target="#step1_2" data-dismiss="modal" >Далее
                             </button>
                             
                         </a></div>
@@ -202,11 +202,10 @@ try {
 </div>
 </div>
 </div>
- 
 <!-- Modal  step1_2-->
 <div class="modal fade" id="step1_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -214,7 +213,7 @@ try {
             </div>
             <div class="modal-body">
 
-                <div class="container" style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
+                <div class="container"  style="height: 80vh; overflow-y: scroll;overflow-x: hidden;">
                     <div class="row justify-content-center">
                         <div class="col-md-11 col-sm-10 prices">                    
                             <div class="row text-center">
@@ -239,7 +238,7 @@ try {
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" >
                         <div class="col-md-11 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
                             <form>
@@ -384,7 +383,7 @@ try {
                             </form>
 
                             <div class="col-md-12 col-sm-12 further"><a href="#step1_3">
-                                    <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_1" data-dismiss="modal" >Назад
+                                    <button type="button" id="cl" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_1" data-dismiss="modal" >Назад
                                     </button>
                                     <button type="button" class="btn button further-btn" data-toggle="modal"
                                             data-target="#step1_3" data-dismiss="modal">Далее
@@ -399,10 +398,11 @@ try {
         </div>
     </div>
 </div>
+
 <!-- Modal step1_3-->
-<div class="modal fade" id="step1_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+<div class="modal fade" id="step1_3" " tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onload=" document.getElementsByTagName('body').setAttribute('class', 'modal-open');">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -469,8 +469,8 @@ try {
 
 <!-- Modal step1_4-->
 <div class="modal fade" id="step1_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -546,8 +546,8 @@ try {
 
 <!-- Modal step2_1-->
 <div class="modal fade" id="step2_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -638,8 +638,8 @@ try {
 
 <!-- Modal step2_2-->
 <div class="modal fade" id="step2_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -720,9 +720,9 @@ try {
                                                 <label>Номер</label>
                                             </div>
                                             <div class="col-md-2 col-sm-2">
-                                                <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); border-radius: 4px 0 0 4px; ">
-                                                    <option>+7</option>
-                                                    <option>Пункт2</option>
+                                                <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); width: 110%; border-radius: 4px 0 0 4px; ">
+                                                    <option style="width: 30px;">+7</option>
+                                                    <option style="width: 30px;">+38</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-8 col-sm-8">
@@ -750,8 +750,8 @@ try {
 
 <!-- Modal step2_3-->
 <div class="modal fade" id="step2_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 230%; margin-left: -65%;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -1588,24 +1588,26 @@ try {
 <div class="container" style="padding-top: 30px;">
     <div class="row justify-content-center">
 
-        <div class="col-md-10 col-sm-10 prices">
+        <div class="col-12 prices">
             <p class="text-center caption">Цены и условия</p>
+        </div>
+        <div class="col-md-12">
             <div class="row justify-content-center">
-                <div class="col-md-9 col-sm-10">
+                <div class="col-lg-9 col-sm-12" style="margin-bottom: 25px;">
                     <div>
                             Более 1000 каналов в отличном качестве. Больше не нужно перебирать 
                             сайты в поисках любимой озвучки сериала и ждать нудную рекламу казино. 
                             Теперь все последние новинки кино всегда с вами.
                         </div>
 
-                    <ul>
+                    <ul style="margin: 15px 30px;">
                         <div class="row justify-content-center">
-                            <div class="col-md-5 col-sm-10">
+                            <div class="col-md-12 col-lg-5 col-sm-10">
                                 <li>Гарантия на оборудование</li>
                                 <li>Не кардшеринг</li>
                                 <li>Не нужна спутниковая тарелка</li>
                             </div>
-                            <div class="col-md-7 col-sm-10">
+                            <div class="col-md-12 col-lg-7 col-sm-10">
                                 <li>Более 1000 каналов в отличном качестве</li>
                                 <li>Никаких дополнительных платежей</li>
                                 <li>Множество полезных функций</li>
@@ -1615,21 +1617,21 @@ try {
                     <div class="comment">   Если вас не устроит количество каналов и контента, мы вернем ваши деньги!</div>
                 </div>
 
-                <div class="col-md-3 col-sm-10 img-price">
-                    <img src="img/images/price.png">
+                <div class="col-md-3 col-sm-10 img-price text-center">
+                    <img src="img/images/price.png" class="img-fluid">
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center" style="margin-top: 25px;">
                 <div class="col-md-6 col-sm-12">
                     <div class="text-btn">Я — новый клиент</div>
-                    <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step1_1">
+                    <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step1_1" style=" white-space: inherit;">
                         Попробовать бесплатно 2 дня
                     </button>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
                     <div class="text-btn">Уже использую EasyTV</div>
-                    <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step2_1">
+                    <button type="button" class="btn button join-btn" data-toggle="modal" data-target="#step2_1" style=" white-space: inherit;">
                         Продлить подписку
                     </button>
                 </div>
@@ -1639,6 +1641,7 @@ try {
     </div>
 </div>
 <!--Present-->
+<div id="system"><a name="system" href="#system"></a></div>
 <div class="present  d-flex justify-content-center align-items-center" style="margin-top: 30px;">
     <div class="container">
         <div class="row">
@@ -1653,7 +1656,6 @@ try {
 
 <!--Feedback-->
 
-<div id="system"><a name="system" href="#system"></a></div>
 <div class="feedback">
     <div class="container">
         <div class="row">
@@ -1715,36 +1717,36 @@ try {
         <div class="row">
             <div class="col-12 text-center" style="margin-top: 60px;">
 
-                <h1 style="font-size: 20px; line-height: 24px; color: #fff !important; margin-bottom: 30px;">Хотите
+                <h1 style="font-size: 20px; line-height: 24px; color: #fff !important; margin-bottom: 30px; padding-left: 35px;">Хотите
                     сотрудничать или задать вопрос?</h1>
             </div>
 
-            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
-                <label for="name"><h1>Имя</h1></label>
+            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
+                <label for="name"><h1 style="padding-top: 8px;">Имя</h1></label>
             </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
                 <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
             </div>
 
-            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
-                <label for="email"><h1>E-mail</h1></label>
+            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
+                <label for="email"><h1 style="padding-top: 8px;">E-mail</h1></label>
 
             </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
                 <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
             </div>
 
-            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
-                <label for="telNo"><h1>Номер телефона</h1></label>
+            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
+                <label for="telNo"><h1 style="padding-top: 8px;">Номер телефона</h1></label>
             </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
+            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
                 <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
             </div>
-            <div class="col-md-4 text-md-right text-center" style="margin: 5px 0;">
-                <label for="textar"><h1>Ваше сообщение</h1></label>
+            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
+                <label for="textar" ><h1 style="padding-top: 8px;">Ваше сообщение</h1></label>
             </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 5px 0;">
-                <textarea placeholder="Ваше сообщение" style="margin: 5px 0; padding: 8px;" name="textar"></textarea>
+            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
+                <textarea placeholder="Текст сообщения" style="margin: 5px 0; padding: 8px;" name="textar"></textarea>
             </div>
             <div class="col-12 text-center" style="margin-top: 30px; margin-bottom: 35px; ">
                 <?php
