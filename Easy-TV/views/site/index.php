@@ -133,8 +133,8 @@ try {
                                         <button type="button" id="equipment" class="step1-btn2" value="4999" onclick="enbl();two(equipment.value);sum(); equipment.style.backgroundColor='rgba(85, 164, 98,0.4)'; sale.style.backgroundColor=''; checkThreeNew.style.display = 'none';checkTwoNew.style.display = 'block';">
                                             <div class="col-md-12 col-sm-12 ">
 
-                                                <div style="float: left;">Оборудование</div>
-                                                <div style="float:right;">4999 руб</div>
+                                                <div class="col-md-6 text-left " style="padding: 0;float: left;">Оборудование</div>
+                                                <div class="col-md-6 text-right" style="float:right; padding: 0;">4999 руб</div>
                                             </div>
                                             
                                             <p class="t5" style="clear: both;" style="font-size: 0;"><b>Комплект поставки:</b></p>
@@ -142,7 +142,7 @@ try {
 
                                                     <ul style="padding: 0;">
                                                     <div class="col-md-6 col-sm-12 t5"
-                                                         style="min-width: 300px; float: left; padding-bottom: 20px;">
+                                                         style="min-width: 150px; float: left; padding-bottom: 20px;">
 
                                                         <li>- сетевой мультимедийный медиаплеер.</li>
                                                         <li>- кабель HDMI</li>
@@ -150,7 +150,7 @@ try {
                                                         <li>- адаптер питания 5V 1.5А.</li>
                                                     </div>
                                                     <div class="col-md-6 col-sm-12 t5"
-                                                         style="min-width: 300px; float: left; padding-bottom: 20px;">
+                                                         style="min-width: 150px; float: left; padding-bottom: 20px;">
                                                         <li>- программируемый пульт ДУ.</li>
                                                         <li>- элементы питания АА - 2шт.</li>
                                                         <li>- кабель Ethernet.</li>
@@ -163,13 +163,15 @@ try {
                                 </div>
                             </div>
                                 <button type="button" class="step1-btn smart" id="sale" value="0" onclick="disenbl();two(sale.value);sum();equipment.style.backgroundColor=''; sale.style.backgroundColor='rgba(85, 164, 98,0.4)';checkTwoNew.style.display = 'none'; checkThreeNew.style.display='block'; ">
-                                    <div class="t1" style="margin-top: 10px;">Подключиться через SmartTV
-                                        <br>
-                                        <a href="Инструкция.txt" download style="color: #55A462;">
-                                        <p style="clear: both;font-size: 14px; text-align: left !important;"><b>Скачать инструкцию</b></p></a>
+                                    <div class="t1 col-md-6 text-left" style="margin-top: 10px; float: left;">Подключиться через SmartTV
+                                        
                                         
                                     </div>
-                                    <div class="t2">бесплатно</div>
+                                    <div class="t2 col-md-6 text-right" style="float: right; margin-top: 10px;">бесплатно</div>
+                                    <br>
+                                        <a href="Инструкция.txt" download style="color: #55A462;">
+                                        <p style="clear: both;font-size: 14px; padding-left: 15px;
+     text-align: left !important;"><b>Скачать инструкцию</b></p></a>
 
                                 </button>
                         </div>
