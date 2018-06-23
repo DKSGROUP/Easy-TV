@@ -253,7 +253,7 @@ try {
                                                 <label>ФИО</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input  type="text" class="form-control " required="" placeholder="">
+                                                <input  type="text" class="form-control " required="" placeholder="" width="100%">
                                             </div>
                                         </div>
                                         </p>
@@ -285,13 +285,13 @@ try {
                                             <div class="col-md-2 col-sm-2">
                                                 <label>Номер</label>
                                             </div>
-                                            <div class="col-md-2 col-sm-2">
+                                            <div class="col-md-1 col-sm-1">
                                                 <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); border-radius: 4px 0 0 4px; ">
                                                     <option>+7</option>
-                                                    <option>Пункт2</option>
+                                                    <option>+38</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-8 col-sm-8">
+                                            <div class="col-md-9 col-sm-9">
                                                 <input  type="text" class="form-control " required=""
                                                        placeholder="(000) 999-99-99">
                                             </div>
@@ -371,7 +371,7 @@ try {
                                                         <label>Квартира</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input id="apart" style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="apart" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
