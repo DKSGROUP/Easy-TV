@@ -241,19 +241,19 @@ try {
                         </div>
                     </div>
                     <div class="row justify-content-center" >
-                        <div class="col-md-11 col-sm-12 step2">
+                        <div class="col-md-12 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
                             <form>
                                 <div class="row justify-content-center ">
-                                    <div class="col-md-6 col-sm-10" style="min-width: 470px;">
+                                    <div class="col-md-12 " style="min-width: 150px;">
 
                                         <p>
-                                        <div class="row justify-content-center">
+                                        <div class="row">
                                             <div class="col-md-2 col-sm-2">
                                                 <label>ФИО</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required="" placeholder="">
+                                                <input  type="text" class="form-control " required="" placeholder="">
                                             </div>
                                         </div>
                                         </p>
@@ -263,7 +263,7 @@ try {
                                                 <label>Логин</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required=""
+                                                <input  type="text" class="form-control " required=""
                                                        placeholder="Login">
                                             </div>
                                         </div>
@@ -274,7 +274,7 @@ try {
                                                 <label>E-mail</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required=""
+                                                <input type="text" class="form-control " required=""
                                                        placeholder="email@example.com">
                                             </div>
                                         </div>
@@ -292,7 +292,7 @@ try {
                                                 </select>
                                             </div>
                                             <div class="col-md-8 col-sm-8">
-                                                <input style="width: 100%" type="text" class="form-control " required=""
+                                                <input  type="text" class="form-control " required=""
                                                        placeholder="(000) 999-99-99">
                                             </div>
                                         </div>
@@ -300,14 +300,14 @@ try {
                                     </div>
 
 
-                                    <div class="col-md-6 col-sm-10" style="min-width: 470px;">
+                                    <div class="col-md-12" style="min-width: 150px;">
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-2 col-sm-2">
                                                 <label>Страна</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input id="country" type="text" style="width: 100%" class="form-control " required="" placeholder="">
+                                                <input id="country" type="text" class="form-control " required="" placeholder="">
                                             </div>
                                         </div>
                                         </p>
@@ -320,7 +320,7 @@ try {
                                                         <label>Город</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input id="town" style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="town" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -332,8 +332,8 @@ try {
                                                     <div class="col-md-4 col-sm-4">
                                                         <label>Индекс</label>
                                                     </div>
-                                                    <div class="col-md-8 col-sm-8">
-                                                        <input id="index-t" style="width: 100%" type="text" class="form-control " required=""
+                                                    <div class="col-md-8 col type="text" class="form-control " required="">
+                                                        <input id="indexx" type="text" class="form-control " required=""
                                                                placeholder="хххххх">
                                                     </div>
                                                 </div>
@@ -346,7 +346,7 @@ try {
                                                 <label>Улица</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input id="street" style="width: 100%" type="text" class="form-control " required="" placeholder="">
+                                                <input id="street" type="text" class="form-control " required="" placeholder="">
                                             </div>
                                         </div>
                                         </p>
@@ -359,7 +359,7 @@ try {
                                                         <label>Дом</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input id="house" style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="house"  type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -515,8 +515,8 @@ try {
                                 <div class="col-md-6 col-sm-12 bord">
                                     <p style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;" >Товар</p>
                                     <p id="checkOneNew">Подписка на <label id="counpMN"> </label> месяц - <label id="priceNew">1</label> руб</p>
-                                    <p id="checkTwoNew"> Оборудование - 4999 руб</p>
-                                    <p id="checkThreeNew"> Smart - TV - 0 руб</p>
+                                    <p id="checkTwoNew" style="display: none;"> Оборудование - 4999 руб</p>
+                                    <p id="checkThreeNew" style="display: none;"> Smart - TV - 0 руб</p>
                                     <p style="font-size: 20px !important; margin-top: 15px;"><b>Сумма - <label id="lab2" style="font-size: 22px;color: #55A462;">0</label> руб</b></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12 bord">
