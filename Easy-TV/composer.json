@@ -20,7 +20,8 @@
         "bower-asset/bootstrap": "4.0.0",
         "bower-asset/font-awesome": "4.*",
         "lajax/yii2-language-picker": "^1.2",
-        "dotzero/yii2-amocrm": "^0.2.2"
+        "dotzero/yii2-amocrm": "^0.2.2",
+        "borales/yii2-phone-input": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

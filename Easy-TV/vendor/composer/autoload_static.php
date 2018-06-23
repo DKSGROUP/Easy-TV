@@ -34,11 +34,16 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         ),
         'l' => 
         array (
+            'libphonenumber\\' => 15,
             'lajax\\languagepicker\\' => 21,
         ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
+        ),
+        'b' => 
+        array (
+            'borales\\extensions\\phoneInput\\' => 30,
         ),
         'W' => 
         array (
@@ -65,6 +70,7 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
+            'Giggsey\\Locale\\' => 15,
         ),
         'F' => 
         array (
@@ -126,6 +132,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
+        'libphonenumber\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src',
+        ),
         'lajax\\languagepicker\\' => 
         array (
             0 => __DIR__ . '/..' . '/lajax/yii2-language-picker',
@@ -133,6 +143,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'borales\\extensions\\phoneInput\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/borales/yii2-phone-input/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -189,6 +203,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'Giggsey\\Locale\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/giggsey/locale/src',
         ),
         'Faker\\' => 
         array (

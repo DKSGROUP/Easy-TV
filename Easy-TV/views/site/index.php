@@ -6,6 +6,10 @@
 use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+use borales\extensions\phoneInput\PhoneInput;
+
 
 AppAsset::register($this);
 $this->title = 'Easy-TV';
@@ -67,7 +71,7 @@ $this->title = 'Easy-TV';
     printf('Error (%d): %s', $e->getCode(), $e->getMessage());
 }*/
 
-
+/*
 function addUser($name, $login, $email, $phone, $address)
 {
     try {
@@ -133,7 +137,7 @@ function addUser($name, $login, $email, $phone, $address)
         printf('Error (%d): %s' . PHP_EOL, $e->getCode(), $e->getMessage());
     }
 }
-
+*/
 ?>
 
 <!-- Modal step1_1-->
@@ -751,7 +755,10 @@ function addUser($name, $login, $email, $phone, $address)
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-sm-10 step2">
                             <p class="text-center caption">Шаг 2 из 3: Введите личную информацию</p>
-                            <form>
+                            <?php $form = ActiveForm::begin([
+                                'id' => 'register-form',
+                            ]) ?>
+                            <?php $model = new \app\models\RegisterForm(); ?>
                                 <div class="row justify-content-center ">
                                     <div class="col-md-12 col-sm-10">
 
@@ -761,7 +768,8 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <label>ФИО</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required="" placeholder="">
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false) ?>
+                                                <!--<input style="width: 100%" type="text" class="form-control " required="" placeholder="">-->
                                             </div>
                                         </div>
                                         </p>
@@ -771,8 +779,9 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <label>Логин</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input type="text" style="width: 100%" class="form-control " required=""
-                                                       placeholder="Login">
+                                                <?= $form->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false) ?>
+                                                <!--<input type="text" style="width: 100%" class="form-control " required=""
+                                                       placeholder="Login">-->
                                             </div>
                                         </div>
                                         </p>
@@ -782,8 +791,9 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <label>E-mail</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input type="text" style="width: 100%" class="form-control " required=""
-                                                       placeholder="email@example.com">
+                                                <?= $form->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false) ?>
+                                                <!--<input type="text" style="width: 100%" class="form-control " required=""
+                                                       placeholder="email@example.com">-->
                                             </div>
                                         </div>
                                         </p>
@@ -793,7 +803,15 @@ function addUser($name, $login, $email, $phone, $address)
                                             <div class="col-md-2 col-sm-2">
                                                 <label>Номер</label>
                                             </div>
-                                            <div class="col-md-2 col-sm-2">
+                                            <div class="col-md-10 col-sm-10">
+                                                <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false)->widget(
+                                                        PhoneInput::className(), [
+                                                    'jsOptions' => [
+                                                        'onlyCountries' => ['ru', 'ua'],
+                                                    ]
+                                                ]) ?>
+                                            </div>
+                                            <!--<div class="col-md-2 col-sm-2">
                                                 <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); width: 110%; border-radius: 4px 0 0 4px; ">
                                                     <option style="width: 30px;">+7</option>
                                                     <option style="width: 30px;">+38</option>
@@ -802,12 +820,12 @@ function addUser($name, $login, $email, $phone, $address)
                                             <div class="col-md-8 col-sm-8">
                                                 <input type="text" style="width: 100%" class="form-control " required=""
                                                        placeholder="(000) 999-99-99">
-                                            </div>
+                                            </div>-->
                                         </div>
                                         </p>
                                     </div>
                                 </div>
-                            </form>
+                            <?php ActiveForm::end() ?>
                         </div>
                         <div class="col-md-12 col-sm-12 further"><a href="#step2_3">
                                 <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step2_1" data-dismiss="modal" >Назад</button>
@@ -883,7 +901,7 @@ function addUser($name, $login, $email, $phone, $address)
                         </div>
                         <div class="col-md-12 col-sm-12 further">
                                 <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step2_2" data-dismiss="modal" >Назад</button>
-                                <button type="button" class="btn button further-btn">Перейти к оплате</button>
+                                <button type="button" class="btn button further-btn" onclick="$('#register-form').yiiActiveForm('submitForm');">Перейти к оплате</button>
                             </div>
 
                     </div>
