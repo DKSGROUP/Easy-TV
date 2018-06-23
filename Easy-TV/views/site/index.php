@@ -448,7 +448,7 @@ try {
                                 <div class="col-md-6 col-sm-10"
                                      style="text-align: center; max-width: 400px; font-size: 20px; font-weight: 500;">
                                         <button type="button" class="step1-btn" style="height: auto;">
-                                            <div style="padding: 20px; ">  Бесплатная доставка любой почтовой службой</div>
+                                            <div style="padding: 20px; " onclick="deliver.style.display='block'; ">  Бесплатная доставка любой почтовой службой</div>
                                         </button>
                                 </div>
                             </div>
@@ -527,9 +527,10 @@ try {
                                     <p>Улица, Дом, Квартира</p>
 
                                 </div>
-                                <div class="col-md-4 col-sm-12 bord">
+                                <div class="col-md-12 col-sm-12 ">
 
-                                    <p  style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;" >Способ доставки</p>
+                                    <p  style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px; padding-top: 20px;" >Способ доставки:</p>
+                                    <p id="deliver" style="display: block; "><b>Новая почта:</b> отделение №36, ул. Виноградная 72a</p>
                                 </div>
                             </div>
                         </div>
