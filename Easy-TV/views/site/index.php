@@ -16,53 +16,124 @@ $this->title = 'Easy-TV';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
 <?php
-try {
-    // Получение экземпляра модели для работы с аккаунтом
+/*try {
     $amo = Yii::$app->amocrm->getClient();
-    $name = 'ФИОкастом';
 
-    $account = $amo->account;
+    // Добавление дополнительных полей
 
-    // или прямо
-    $account = Yii::$app->amocrm->account;
+    $field = $amo->custom_field;
+    echo 'FIRST';
+    $field->debug(true); // Режим отладки
+    $field['name'] = 'Login';
+    $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
+    $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
+    $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
+    $id = $field->apiAdd();
+    print_r($id);
 
-    // Вывод информации об аккаунте
-    //print_r($account->apiCurrent());
+    $field = $amo->custom_field;
+    echo 'SECOND';
+    $field->debug(true); // Режим отладки
+    $field['name'] = 'E-mail';
+    $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
+    $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
+    $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
+    $id = $field->apiAdd();
+    print_r($id);
 
-    // Получение экземпляра модели для работы с контактами
-    $contact = $amo->contact;
+    $field = $amo->custom_field;
+    echo 'THIRD';
+    $field->debug(true); // Режим отладки
+    $field['name'] = 'Phone';
+    $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
+    $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
+    $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
+    $id = $field->apiAdd();
+    print_r($id);
 
-    // Заполнение полей модели
-    $contact['name'] = $name;
-    $contact['request_id'] = '123456789';
-    //$contact['date_create'] = '-2 DAYS';
-    $contact['responsible_user_id'] = $amo->fields['ResponsibleUserId'];
-    $contact['company_name'] = 'ООО Тестовая компания';
-    $contact['tags'] = ['тест1', 'тест2', 'test'];
-    $contact->addCustomField(123, [
-        ['+79261112233', 'WORK'],
-    ]);
-    // Добавление нового контакта и получение его ID
-    $id = 0;
-    $unique = true;
-    foreach ($amo->contact->apiList(['query' => $name]) as $item){
-        if ($item['name'] == $name)
-        {
-            $unique = false;
-            $id = $item['id'];
-            break;
-        }
-    }
-    if ($unique) {
-        echo 'UNIQUE';
-        print_r($contact->apiAdd());
-    } else {
-        $contact->apiUpdate((int)$id, 'now');
-    }
+    $field = $amo->custom_field;
+    echo 'FOURTH';
+    $field->debug(true); // Режим отладки
+    $field['name'] = 'Address';
+    $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
+    $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
+    $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
+    $id = $field->apiAdd();
+    print_r($id);
+
+
 
 } catch (\AmoCRM\Exception $e) {
-    printf('Error (%d): %s' . PHP_EOL, $e->getCode(), $e->getMessage());
+    printf('Error (%d): %s', $e->getCode(), $e->getMessage());
+}*/
+
+
+function addUser($name, $login, $email, $phone, $address)
+{
+    try {
+        // Получение экземпляра модели для работы с аккаунтом
+        $amo = Yii::$app->amocrm->getClient();
+        $name = 'ФИОкастом';
+        $login = 'someLogin2';
+        $email = 'test@email.com';
+        $phone = '+71234567890';
+        $address = 'KPI st.';
+
+        $account = $amo->account;
+
+        // или прямо
+        $account = Yii::$app->amocrm->account;
+
+        // Вывод информации об аккаунте
+        //print_r($account->apiCurrent());
+
+        // Получение экземпляра модели для работы с контактами
+        $contact = $amo->contact;
+
+        // Заполнение полей модели
+        $contact['name'] = $name;
+        $contact['request_id'] = '123456789';
+        //$contact['date_create'] = '-2 DAYS';
+        $contact['responsible_user_id'] = $amo->fields['ResponsibleUserId'];
+        $contact->addCustomField(473325, [
+            [$login, 'WORK'],
+        ]);
+        $contact->addCustomField(473327, [
+            [$email, 'WORK'],
+        ]);
+        $contact->addCustomField(473305, [
+            [$phone, 'WORK'],
+        ]);
+        $contact->addCustomField(473307, [
+            [$address, 'WORK'],
+        ]);
+        // Добавление нового контакта и получение его ID
+        $id = 0;
+        $unique = true;
+        foreach ($amo->contact->apiList(['query' => '']) as $item) {
+            $fields = $item['custom_fields'];
+            foreach ($fields as $field) {
+                if ($field['name'] == 'Login' && $field['values'][0]['value'] == $login) {
+                    $unique = false;
+                    $id = $item['id'];
+                    break;
+                }
+            }
+        }
+        if ($unique) {
+            //echo 'UNIQUE';
+            $contact->apiAdd();
+        } else {
+            //echo 'NOT UNIQUE';
+            $contact->apiUpdate((int)$id, 'now');
+        }
+        //print_r($amo->contact->apiList(['query' => '']));
+
+    } catch (\AmoCRM\Exception $e) {
+        printf('Error (%d): %s' . PHP_EOL, $e->getCode(), $e->getMessage());
+    }
 }
+
 ?>
 
 <!-- Modal step1_1-->

@@ -59,9 +59,9 @@ $config = [
         ],
         'amocrm' => [
             'class' => 'yii\amocrm\Client',
-            'subdomain' => 'temnyip.amocrm.ru', // Персональный поддомен на сайте amoCRM
+            'subdomain' => 'temnyip', // Персональный поддомен на сайте amoCRM
             'login' => 'temnyip@mail.ru', // Логин на сайте amoCRM
-            'hash' => '2723732e3646c89c27cac5c367243de1b58c932a', // Хеш на сайте amoCRM
+            'hash' => 'c8f5cde50a05453420e6ddb890ffaa2851cf30b3', // Хеш на сайте amoCRM
 
             // Для хранения ID полей можно воспользоваться хелпером
             'fields' => [
