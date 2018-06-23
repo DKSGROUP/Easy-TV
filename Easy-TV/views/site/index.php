@@ -292,8 +292,8 @@ try {
                                                 </select>
                                             </div>
                                             <div class="col-md-9 col-sm-9">
-                                                <input  type="text" class="form-control " required=""
-                                                       placeholder="(000) 999-99-99">
+                                                <input   type="text" class="form-control " required=""
+                                                       placeholder="(000) 999-99-99" style="width: 95%; float: right;">
                                             </div>
                                         </div>
                                         </p>
@@ -333,7 +333,7 @@ try {
                                                         <label>Индекс</label>
                                                     </div>
                                                     <div class="col-md-8 col type="text" class="form-control " required="">
-                                                        <input id="indexx" type="text" class="form-control " required=""
+                                                        <input id="index-t" type="text" class="form-control " required=""
                                                                placeholder="хххххх">
                                                     </div>
                                                 </div>
@@ -346,7 +346,7 @@ try {
                                                 <label>Улица</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input id="street" type="text" class="form-control " required="" placeholder="">
+                                                <input id="street" type="text" class="form-control " required="" placeholder="Улица">
                                             </div>
                                         </div>
                                         </p>
@@ -360,7 +360,7 @@ try {
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
                                                         <input id="house"  type="text" class="form-control " required=""
-                                                               placeholder="">
+                                                               placeholder="Дом">
                                                     </div>
                                                 </div>
                                             </div>
