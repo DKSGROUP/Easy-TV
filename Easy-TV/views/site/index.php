@@ -204,8 +204,8 @@ function addUser($name, $login, $email, $phone, $address)
                                         <button type="button" id="equipment" class="step1-btn2" value="4999" onclick="enbl();two(equipment.value);sum(); equipment.style.backgroundColor='rgba(85, 164, 98,0.4)'; sale.style.backgroundColor=''; checkThreeNew.style.display = 'none';checkTwoNew.style.display = 'block';">
                                             <div class="col-md-12 col-sm-12 ">
 
-                                                <div style="float: left;">Оборудование</div>
-                                                <div style="float:right;">4999 руб</div>
+                                                <div class="col-md-6 text-left " style="padding: 0;float: left;">Оборудование</div>
+                                                <div class="col-md-6 text-right" style="float:right; padding: 0;">4999 руб</div>
                                             </div>
                                             
                                             <p class="t5" style="clear: both;" style="font-size: 0;"><b>Комплект поставки:</b></p>
@@ -213,7 +213,7 @@ function addUser($name, $login, $email, $phone, $address)
 
                                                     <ul style="padding: 0;">
                                                     <div class="col-md-6 col-sm-12 t5"
-                                                         style="min-width: 300px; float: left; padding-bottom: 20px;">
+                                                         style="min-width: 150px; float: left; padding-bottom: 20px;">
 
                                                         <li>- сетевой мультимедийный медиаплеер.</li>
                                                         <li>- кабель HDMI</li>
@@ -221,7 +221,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                         <li>- адаптер питания 5V 1.5А.</li>
                                                     </div>
                                                     <div class="col-md-6 col-sm-12 t5"
-                                                         style="min-width: 300px; float: left; padding-bottom: 20px;">
+                                                         style="min-width: 150px; float: left; padding-bottom: 20px;">
                                                         <li>- программируемый пульт ДУ.</li>
                                                         <li>- элементы питания АА - 2шт.</li>
                                                         <li>- кабель Ethernet.</li>
@@ -234,13 +234,15 @@ function addUser($name, $login, $email, $phone, $address)
                                 </div>
                             </div>
                                 <button type="button" class="step1-btn smart" id="sale" value="0" onclick="disenbl();two(sale.value);sum();equipment.style.backgroundColor=''; sale.style.backgroundColor='rgba(85, 164, 98,0.4)';checkTwoNew.style.display = 'none'; checkThreeNew.style.display='block'; ">
-                                    <div class="t1" style="margin-top: 10px;">Подключиться через SmartTV
-                                        <br>
-                                        <a href="Инструкция.txt" download style="color: #55A462;">
-                                        <p style="clear: both;font-size: 14px; text-align: left !important;"><b>Скачать инструкцию</b></p></a>
+                                    <div class="t1 col-md-6 text-left" style="margin-top: 10px; float: left;">Подключиться через SmartTV
+                                        
                                         
                                     </div>
-                                    <div class="t2">бесплатно</div>
+                                    <div class="t2 col-md-6 text-right" style="float: right; margin-top: 10px;">бесплатно</div>
+                                    <br>
+                                        <a href="Инструкция.txt" download style="color: #55A462;">
+                                        <p style="clear: both;font-size: 14px; padding-left: 15px;
+     text-align: left !important;"><b>Скачать инструкцию</b></p></a>
 
                                 </button>
                         </div>
@@ -310,19 +312,19 @@ function addUser($name, $login, $email, $phone, $address)
                         </div>
                     </div>
                     <div class="row justify-content-center" >
-                        <div class="col-md-11 col-sm-12 step2">
+                        <div class="col-md-12 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
                             <form>
                                 <div class="row justify-content-center ">
-                                    <div class="col-md-6 col-sm-10" style="min-width: 470px;">
+                                    <div class="col-md-12 " style="min-width: 150px;">
 
                                         <p>
-                                        <div class="row justify-content-center">
+                                        <div class="row">
                                             <div class="col-md-2 col-sm-2">
                                                 <label>ФИО</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required="" placeholder="">
+                                                <input  type="text" class="form-control " required="" placeholder="" width="100%">
                                             </div>
                                         </div>
                                         </p>
@@ -332,7 +334,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <label>Логин</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required=""
+                                                <input  type="text" class="form-control " required=""
                                                        placeholder="Login">
                                             </div>
                                         </div>
@@ -343,7 +345,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <label>E-mail</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input style="width: 100%" type="text" class="form-control " required=""
+                                                <input type="text" class="form-control " required=""
                                                        placeholder="email@example.com">
                                             </div>
                                         </div>
@@ -354,29 +356,29 @@ function addUser($name, $login, $email, $phone, $address)
                                             <div class="col-md-2 col-sm-2">
                                                 <label>Номер</label>
                                             </div>
-                                            <div class="col-md-2 col-sm-2">
+                                            <div class="col-md-1 col-sm-1">
                                                 <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); border-radius: 4px 0 0 4px; ">
                                                     <option>+7</option>
-                                                    <option>Пункт2</option>
+                                                    <option>+38</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-8 col-sm-8">
-                                                <input style="width: 100%" type="text" class="form-control " required=""
-                                                       placeholder="(000) 999-99-99">
+                                            <div class="col-md-9 col-sm-9">
+                                                <input   type="text" class="form-control " required=""
+                                                       placeholder="(000) 999-99-99" style="width: 95%; float: right;">
                                             </div>
                                         </div>
                                         </p>
                                     </div>
 
 
-                                    <div class="col-md-6 col-sm-10" style="min-width: 470px;">
+                                    <div class="col-md-12" style="min-width: 150px;">
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-2 col-sm-2">
                                                 <label>Страна</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input id="country" type="text" style="width: 100%" class="form-control " required="" placeholder="">
+                                                <input id="country" type="text" class="form-control " required="" placeholder="">
                                             </div>
                                         </div>
                                         </p>
@@ -389,7 +391,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                         <label>Город</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input id="town" style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="town" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -401,8 +403,8 @@ function addUser($name, $login, $email, $phone, $address)
                                                     <div class="col-md-4 col-sm-4">
                                                         <label>Индекс</label>
                                                     </div>
-                                                    <div class="col-md-8 col-sm-8">
-                                                        <input id="index-t" style="width: 100%" type="text" class="form-control " required=""
+                                                    <div class="col-md-8 col type="text" class="form-control " required="">
+                                                        <input id="index-t" type="text" class="form-control " required=""
                                                                placeholder="хххххх">
                                                     </div>
                                                 </div>
@@ -415,7 +417,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <label>Улица</label>
                                             </div>
                                             <div class="col-md-10 col-sm-10">
-                                                <input id="street" style="width: 100%" type="text" class="form-control " required="" placeholder="">
+                                                <input id="street" type="text" class="form-control " required="" placeholder="Улица">
                                             </div>
                                         </div>
                                         </p>
@@ -428,8 +430,8 @@ function addUser($name, $login, $email, $phone, $address)
                                                         <label>Дом</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input id="house" style="width: 100%" type="text" class="form-control " required=""
-                                                               placeholder="">
+                                                        <input id="house"  type="text" class="form-control " required=""
+                                                               placeholder="Дом">
                                                     </div>
                                                 </div>
                                             </div>
@@ -440,7 +442,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                         <label>Квартира</label>
                                                     </div>
                                                     <div class="col-md-8 col-sm-8">
-                                                        <input id="apart" style="width: 100%" type="text" class="form-control " required=""
+                                                        <input id="apart" type="text" class="form-control " required=""
                                                                placeholder="">
                                                     </div>
                                                 </div>
@@ -517,7 +519,7 @@ function addUser($name, $login, $email, $phone, $address)
                                 <div class="col-md-6 col-sm-10"
                                      style="text-align: center; max-width: 400px; font-size: 20px; font-weight: 500;">
                                         <button type="button" class="step1-btn" style="height: auto;">
-                                            <div style="padding: 20px; ">  Бесплатная доставка любой почтовой службой</div>
+                                            <div style="padding: 20px; " onclick="deliver.style.display='block'; ">  Бесплатная доставка любой почтовой службой</div>
                                         </button>
                                 </div>
                             </div>
@@ -584,8 +586,8 @@ function addUser($name, $login, $email, $phone, $address)
                                 <div class="col-md-6 col-sm-12 bord">
                                     <p style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;" >Товар</p>
                                     <p id="checkOneNew">Подписка на <label id="counpMN"> </label> месяц - <label id="priceNew">1</label> руб</p>
-                                    <p id="checkTwoNew"> Оборудование - 4999 руб</p>
-                                    <p id="checkThreeNew"> Smart - TV - 0 руб</p>
+                                    <p id="checkTwoNew" style="display: none;"> Оборудование - 4999 руб</p>
+                                    <p id="checkThreeNew" style="display: none;"> Smart - TV - 0 руб</p>
                                     <p style="font-size: 20px !important; margin-top: 15px;"><b>Сумма - <label id="lab2" style="font-size: 22px;color: #55A462;">0</label> руб</b></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12 bord">
@@ -596,9 +598,10 @@ function addUser($name, $login, $email, $phone, $address)
                                     <p>Улица, Дом, Квартира</p>
 
                                 </div>
-                                <div class="col-md-4 col-sm-12 bord">
+                                <div class="col-md-12 col-sm-12 ">
 
-                                    <p  style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px;" >Способ доставки</p>
+                                    <p  style="font-weight: bold; font-size: 20px; line-height: 24px; padding-bottom: 15px; padding-top: 20px;" >Способ доставки:</p>
+                                    <p id="deliver" style="display: block; "><b>Новая почта:</b> отделение №36, ул. Виноградная 72a</p>
                                 </div>
                             </div>
                         </div>

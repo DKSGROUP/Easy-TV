@@ -369,7 +369,7 @@ nav{
 }
 
 .smart{
-    height: 90px !important;
+    min-height: 90px !important;
 }
 .step1{text-align: center;}
 .step1-btn2{
@@ -377,7 +377,7 @@ nav{
     float: left;
     color: #4F4F4F;
     font-size: 20px !important;
-    min-width: 250px;
+    min-width: 150px;
     width: 100%;
     background: #fff;
     border: 1px solid rgba(85, 164, 98, 0.27);
@@ -494,7 +494,6 @@ nav{
 }
 .step2 label{
     font-weight: 500;
-    float: right;
 }
 
 .back-btn{
@@ -550,10 +549,10 @@ nav{
 
 
 
-input[type="text"], input[type="email"], input[type="tel"]{
+.feedback-form input[type="text"], input[type="email"], input[type="tel"]{
     width: 55%;
-   /* max-width: 350px;
-    */height: 35px;
+   max-width: 350px;
+    height: 35px;
     border-radius: 4px;
 }
 
