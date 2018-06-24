@@ -549,15 +549,15 @@ nav{
 
 
 
-.feedback-form input[type="text"], input[type="email"], input[type="tel"]{
+.feedback-form input[type="text"], .feedback-form input[type="email"], .feedback-form input[type="tel"]{
     width: 55%;
    max-width: 350px;
     height: 35px;
     border-radius: 4px;
 }
 
-textarea{
-    width: 55%;
+.feedback-form textarea{width: 55%;
+   max-width: 350px;
     height: 100px;
     border-radius: 4px;
 }

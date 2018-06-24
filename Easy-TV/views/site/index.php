@@ -318,85 +318,65 @@ function addUser($name, $login, $email, $phone, $address)
                     <div class="row justify-content-center" >
                         <div class="col-md-12 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
-                            <form>
+                            <?php $form = ActiveForm::begin([
+                                'id' => 'register-form',
+                            ]) ?>
+                            <?php $model = new \app\models\RegisterForm(); ?>
                                 <div class="row justify-content-center ">
                                     <div class="col-md-12 " style="min-width: 150px;">
 
-                                        <p>
+                                        
                                         <div class="row">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>ФИО</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <input  type="text" class="form-control " required="" placeholder="" width="100%">
+                                            
+                                            <div class="col-md-12 col-sm-12">
+                                                <!--input  type="text" class="form-control " required="" placeholder="Фмилия Имя Отчество" width="100%"-->
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Фамилия Имя Отчество'])->label(false) ?>
                                             </div>
                                         </div>
-                                        </p>
-                                        <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>Логин</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <input  type="text" class="form-control " required=""
-                                                       placeholder="Login">
+                                            <div class="col-md-12">
+                                                <!--input  type="text" class="form-control " required=""
+                                                       placeholder="login"-->
+                                                       <?= $form->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>"Login"])->label(false) ?>
                                             </div>
                                         </div>
-                                        </p>
-                                        <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>E-mail</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <input type="text" class="form-control " required=""
-                                                       placeholder="email@example.com">
+                                            <div class="col-md-12 col-sm-12">
+                                                <!--input type="text" class="form-control " required=""
+                                                       placeholder="email@example.com"-->
+                                                       <?= $form->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control', 'placeholder'=>"email@example.com"])->label(false) ?>
                                             </div>
                                         </div>
-                                        </p>
-
-                                        <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>Номер</label>
-                                            </div>
-                                            <div class="col-md-1 col-sm-1">
-                                                <select style="border: 1px solid rgba(85, 164, 98, 0.27); height: 33px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); border-radius: 4px 0 0 4px; ">
-                                                    <option>+7</option>
-                                                    <option>+38</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-9 col-sm-9">
-                                                <input   type="text" class="form-control " required=""
-                                                       placeholder="(000) 999-99-99" style="width: 95%; float: right;">
+                                            <div class="col-md-12">
+                                                
+                                            <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control','style' => 'min-width = 300%;'])->label(false)->widget(
+                                                        PhoneInput::className(), [
+                                                    'jsOptions' => [
+                                                        'onlyCountries' => ['ru', 'ua'],
+                                                    ]
+                                                ]) ?>
                                             </div>
                                         </div>
-                                        </p>
+                                        
                                     </div>
 
 
                                     <div class="col-md-12" style="min-width: 150px;">
-                                        <p>
+                                        
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>Страна</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <input id="country" type="text" class="form-control " required="" placeholder="">
+                                            <div class="col-md-12 col-sm-12">
+                                                <!--name - country-->
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Страна'])->label(false) ?>
                                             </div>
                                         </div>
-                                        </p>
-                                        <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-6 col-sm-6 ">
 
                                                 <div class="row justify-content-center">
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <label>Город</label>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-8">
-                                                        <input id="town" type="text" class="form-control " required=""
-                                                               placeholder="">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <!--name - town-->
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Город'])->label(false) ?>
                                                     </div>
                                                 </div>
 
@@ -404,61 +384,26 @@ function addUser($name, $login, $email, $phone, $address)
 
                                             <div class="col-md-6 col-sm-6 ">
                                                 <div class="row justify-content-center">
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <label>Индекс</label>
-                                                    </div>
-                                                    <div class="col-md-8 col type="text" class="form-control " required="">
-                                                        <input id="index-t" type="text" class="form-control " required=""
-                                                               placeholder="хххххх">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <!--name - index-->
+                                                               <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Индекс: хххххх'])->label(false) ?>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </p>
-                                        <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>Улица</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <input id="street" type="text" class="form-control " required="" placeholder="Улица">
+                                            <div class="col-md-12 col-sm-12">
+                                                <!--addres-->
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Адрес: улица, дом, квартира'])->label(false) ?>
+
                                             </div>
                                         </div>
-                                        </p>
-                                        <p>
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-6 col-sm-6 ">
-
-                                                <div class="row justify-content-center">
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <label>Дом</label>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-8">
-                                                        <input id="house"  type="text" class="form-control " required=""
-                                                               placeholder="Дом">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 col-sm-6 ">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <label>Квартира</label>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-8">
-                                                        <input id="apart" type="text" class="form-control " required=""
-                                                               placeholder="">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        </p>
 
                                     </div>
                                 </div>
-                            </form>
 
+                            <?php ActiveForm::end() ?>
+                            </div>
                             <div class="col-md-12 col-sm-12 further"><a href="#step1_3">
                                     <button type="button" id="cl" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step1_1" data-dismiss="modal" >Назад
                                     </button>
@@ -764,22 +709,16 @@ function addUser($name, $login, $email, $phone, $address)
 
                                         <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>ФИО</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false) ?>
+                                            <div class="col-md-12 col-sm-12">
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Фамилия Имя Отчество'])->label(false) ?>
                                                 <!--<input style="width: 100%" type="text" class="form-control " required="" placeholder="">-->
                                             </div>
                                         </div>
                                         </p>
                                         <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>Логин</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <?= $form->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false) ?>
+                                            <div class="col-md-12 col-sm-12">
+                                                <?= $form->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>"Login"])->label(false) ?>
                                                 <!--<input type="text" style="width: 100%" class="form-control " required=""
                                                        placeholder="Login">-->
                                             </div>
@@ -787,11 +726,8 @@ function addUser($name, $login, $email, $phone, $address)
                                         </p>
                                         <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>E-mail</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
-                                                <?= $form->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false) ?>
+                                            <div class="col-md-12 col-sm-12">
+                                                <?= $form->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control', 'placeholder'=>"email@example.com"])->label(false) ?>
                                                 <!--<input type="text" style="width: 100%" class="form-control " required=""
                                                        placeholder="email@example.com">-->
                                             </div>
@@ -800,10 +736,7 @@ function addUser($name, $login, $email, $phone, $address)
 
                                         <p>
                                         <div class="row justify-content-center">
-                                            <div class="col-md-2 col-sm-2">
-                                                <label>Номер</label>
-                                            </div>
-                                            <div class="col-md-10 col-sm-10">
+                                            <div class="col-md-12 col-sm-12">
                                                 <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false)->widget(
                                                         PhoneInput::className(), [
                                                     'jsOptions' => [
@@ -1813,32 +1746,20 @@ function addUser($name, $login, $email, $phone, $address)
                     сотрудничать или задать вопрос?</h1>
             </div>
 
-            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
-                <label for="name"><h1 style="padding-top: 8px;">Имя</h1></label>
-            </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
+            <div class="col-md-12 text-center" style="margin: 3px 0;">
                 <input id="telNo" name="name" type="text" style="padding: 8px;" placeholder="Имя Фамилия">
             </div>
 
-            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
-                <label for="email"><h1 style="padding-top: 8px;">E-mail</h1></label>
-
-            </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
+            
+            <div class="col-md-12 text-center" style="margin: 3px 0;">
                 <input type="email" name="email" id="name" placeholder="email@example.com" style="padding: 8px;">
             </div>
 
-            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
-                <label for="telNo"><h1 style="padding-top: 8px;">Номер телефона</h1></label>
+            <div class="col-md-12 text-center" style="margin: 3px 0;">
+                <input type="tel" placeholder="+7-958-756-80-30" minlength="9" maxlength="11" style="padding: 8px;">
             </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
-                <input type="tel" placeholder="999-999-999-99" minlength="9" maxlength="14" style="padding: 8px;">
-            </div>
-            <div class="col-md-4 text-md-right text-center" style="margin: 3px 0;">
-                <label for="textar" ><h1 style="padding-top: 8px;">Ваше сообщение</h1></label>
-            </div>
-            <div class="col-md-8 text-center text-md-left" style="margin: 3px 0;">
-                <textarea placeholder="Текст сообщения" style="margin: 5px 0; padding: 8px;" name="textar"></textarea>
+            <div class="col-md-12 text-center" style="margin: 3px 0;">
+                <textarea placeholder="Текст сообщения" style="padding: 8px;" name="textar"></textarea>
             </div>
             <div class="col-12 text-center" style="margin-top: 30px; margin-bottom: 35px; ">
                 <?php
