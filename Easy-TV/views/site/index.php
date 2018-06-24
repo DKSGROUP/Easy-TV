@@ -362,7 +362,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
                                                 <!--name - country-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Страна'])->label(false) ?>
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%','id'=>'country', 'class' => 'form-control','placeholder'=>'Страна'])->label(false) ?>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
@@ -371,7 +371,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 col-sm-12">
                                                         <!--name - town-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Город'])->label(false) ?>
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%','id'=>'town', 'class' => 'form-control','placeholder'=>'Город'])->label(false) ?>
                                                     </div>
                                                 </div>
 
@@ -381,7 +381,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 col-sm-12">
                                                         <!--name - index-->
-                                                               <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Индекс: хххххх'])->label(false) ?>
+                                                               <?= $form->field($model, 'name')->textInput(['width' => '100%', 'id'=>'index-t','class' => 'form-control','placeholder'=>'Индекс: хххххх'])->label(false) ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -389,7 +389,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
                                                 <!--addres-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Адрес: улица, дом, квартира'])->label(false) ?>
+                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','id'=>'street', 'placeholder'=>'Адрес: улица, дом, квартира'])->label(false) ?>
 
                                             </div>
                                         </div>
@@ -876,19 +876,19 @@ function addUser($name, $login, $email, $phone, $address)
 
 <script>
     function disenbl(){
-                  var elem1 = document.getElementById('country');
+        var elem1 = document.getElementById('country');
         var elem2 = document.getElementById('town');
         var elem3 = document.getElementById('index-t');
         var elem4 = document.getElementById('street');
-        var elem5 = document.getElementById('house');
-        var elem6 = document.getElementById('apart');
+        /*var elem5 = document.getElementById('house');
+        var elem6 = document.getElementById('apart');*/
 
             elem1.setAttribute("readonly",'');
             elem2.setAttribute("readonly",'');
             elem3.setAttribute("readonly",'');
             elem4.setAttribute("readonly",'');
-            elem5.setAttribute("readonly",'');
-            elem6.setAttribute("readonly",'');
+            /*elem5.setAttribute("readonly",'');
+            elem6.setAttribute("readonly",'');*/
     }
 
     function enbl(){
@@ -897,14 +897,14 @@ function addUser($name, $login, $email, $phone, $address)
         var elem2 = document.getElementById('town');
         var elem3 = document.getElementById('index-t');
         var elem4 = document.getElementById('street');
-        var elem5 = document.getElementById('house');
-        var elem6 = document.getElementById('apart');
+        /*var elem5 = document.getElementById('house');
+        var elem6 = document.getElementById('apart');*/
         elem1.removeAttribute("readonly");
         elem2.removeAttribute("readonly");
         elem3.removeAttribute("readonly");
         elem4.removeAttribute("readonly");
-        elem5.removeAttribute("readonly");
-        elem6.removeAttribute("readonly");
+        /*elem5.removeAttribute("readonly");
+        elem6.removeAttribute("readonly");*/
 
     }
 </script>
