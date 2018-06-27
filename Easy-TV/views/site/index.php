@@ -955,15 +955,7 @@ function addUser($name, $login, $email, $phone, $address)
                     <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
                     <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
                         телевидение, которое работает везде, где есть Интернет</p>
-                        <a href="#price">
-                            <?php
-                            echo Button::widget([
-                                'label' => 'Бесплатный просмотр',
-                                'options' => ['class' => 'btn join wow pulse animated', 'style' => 'margin-top:200px; width: 220px; height: 50px; font-size: 18px; animation-duration: 2s;
-                        animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;']
-                            ]);
-                            ?>
-                        </a>
+                        
                 </div>
             </div>
         </div>
@@ -978,6 +970,17 @@ function addUser($name, $login, $email, $phone, $address)
             </div>
         </div>
       </div>
+    </div>
+    <div class="btn-header">
+        <a href="#price">
+                            <?php
+                            echo Button::widget([
+                                'label' => 'Бесплатный просмотр',
+                                'options' => ['class' => 'btn join wow pulse animated', 'style' => 'margin-top:200px; width: 220px; height: 50px; font-size: 18px; animation-duration: 2s;
+                        animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;']
+                            ]);
+                            ?>
+                        </a>
     </div>
                 <!--
                 <div class="title-text text-center" style="margin-top: 145px;">

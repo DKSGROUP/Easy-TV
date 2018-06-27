@@ -42,6 +42,7 @@ nav{
     color: #fff;
     height: 680px !important;
     overflow: hidden;
+    position: relative;
 }
 .navbar a{
     color: #000;
@@ -127,7 +128,13 @@ nav{
 
 }
 
-
+.btn-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 125px;
+}
 .why-we h1{
     font-size: 16px !important;
     line-height: 19px;
