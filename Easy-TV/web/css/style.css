@@ -39,7 +39,7 @@ nav{
     justify-content: flex-end;
 }
 .header{
-    background: #9aa3ae url(../img/header/NEWSE.png) top center no-repeat;
+   /*background: #9aa3ae url(../img/header/NEWSE.png) top center no-repeat;*/
     color: #fff;
     background-size: cover;
 }
@@ -99,7 +99,21 @@ nav{
     border: #3d7c47;
 }
 
+.backg{
+    background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center ;
+}
 
+.backg1{
+    background: rgba(15, 18, 49, 0.34) url('img/header/cat1.jpg') top center ;
+}
+
+.backg2{
+    background: rgba(15, 18, 49, 0.34) url('img/header/cat2.jpg') top center ;
+}
+
+.backg3{
+    background: rgba(15, 18, 49, 0.34) url('img/header/cat3.jpg') top center ;
+}
 
 .why-we h1{
     font-size: 16px !important;
