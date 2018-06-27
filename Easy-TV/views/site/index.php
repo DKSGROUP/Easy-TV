@@ -943,39 +943,44 @@ function addUser($name, $login, $email, $phone, $address)
 
             </script>
 <!--Head-->
-<!--
-<div class="header"
-     style="height: 680px; ">--
-    <div class="container">
-        <div class="row">
-            <div class="col-12">-->
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="height: 680px; ">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="backg">
-                            <div class="title-text text-center" style="margin-top: 145px;">
-                                <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
-                                <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
+
+
+<div class="header">
+    <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="backg"> 
+               <div class="title-text text-center" style="padding-top: 145px;">
+                    <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
+                    <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
                         телевидение, которое работает везде, где есть Интернет</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="backg1">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="backg2">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="backg3">
-                        </div>
-                    </div>
-                  </div>
+                        <a href="#price">
+                            <?php
+                            echo Button::widget([
+                                'label' => 'Бесплатный просмотр',
+                                'options' => ['class' => 'btn join wow pulse animated', 'style' => 'margin-top:200px; width: 220px; height: 50px; font-size: 18px; animation-duration: 2s;
+                        animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;']
+                            ]);
+                            ?>
+                        </a>
                 </div>
             </div>
-                <!--div class="title-text text-center" style="margin-top: 145px;">
+        </div>
+        <div class="carousel-item"> 
+            <div class="backg1">
+                
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="backg2">
+                
+            </div>
+        </div>
+      </div>
+    </div>
+                <!--
+                <div class="title-text text-center" style="margin-top: 145px;">
                     <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
                     <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
                         телевидение, которое работает везде, где есть Интернет</p>
@@ -987,11 +992,8 @@ function addUser($name, $login, $email, $phone, $address)
                             ]);
                             ?>
                         </a>
-                </div-->
-                <img src="img/header/Polygon.png" class="wow animated bounce">
-            </div>
-        </div>
-    </div>
+                </div>
+                <img src="img/header/Polygon.png" class="wow animated bounce">-->
 </div>
 <!--Why we-->
 
