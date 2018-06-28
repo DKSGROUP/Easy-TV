@@ -314,7 +314,7 @@ function addUser($name, $login, $email, $phone, $address)
                         <div class="col-md-12 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
                             <?php $form = ActiveForm::begin([
-                                'id' => 'register-form',
+                                'id' => 'register-form1',
                             ]) ?>
                             <?php $model = new \app\models\RegisterForm(); ?>
                                 <div class="row justify-content-center ">
@@ -348,7 +348,7 @@ function addUser($name, $login, $email, $phone, $address)
                                             <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control','style' => 'min-width = 300%;'])->label(false)->widget(
                                                         PhoneInput::className(), [
                                                     'jsOptions' => [
-                                                        'onlyCountries' => ['ru', 'ua'],
+                                                        'preferredCountries' => ['ru', 'ua'],
                                                     ]
                                                 ]) ?>
                                             </div>
@@ -696,9 +696,11 @@ function addUser($name, $login, $email, $phone, $address)
                         <div class="col-md-8 col-sm-10 step2">
                             <p class="text-center caption">Шаг 2 из 3: Введите личную информацию</p>
                             <?php $form = ActiveForm::begin([
-                                'id' => 'register-form',
+                                'id' => 'register-form2',
+                                'action' => ['site/register'],
+                                'options' => ['method' => 'post']
                             ]) ?>
-                            <?php $model = new \app\models\RegisterForm(); ?>
+                            <?php /*$model = new \app\models\RegisterForm();*/ ?>
                                 <div class="row justify-content-center ">
                                     <div class="col-md-12 col-sm-10">
 
@@ -732,10 +734,10 @@ function addUser($name, $login, $email, $phone, $address)
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
-                                                <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control','style' => 'min-width = 300%;'])->label(false)->widget(
+                                                <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false)->widget(
                                                         PhoneInput::className(), [
                                                     'jsOptions' => [
-                                                        'onlyCountries' => ['ru', 'ua'],
+                                                        'preferredCountries' => ['ru', 'ua'],
                                                     ]
                                                 ]) ?>
                                             </div>
@@ -829,7 +831,7 @@ function addUser($name, $login, $email, $phone, $address)
                         </div>
                         <div class="col-md-12 col-sm-12 further">
                                 <button type="button" class="btn button further-btn back-btn" data-toggle="modal" data-target="#step2_2" data-dismiss="modal" >Назад</button>
-                                <button type="button" class="btn button further-btn" onclick="$('#register-form').yiiActiveForm('submitForm');">Перейти к оплате</button>
+                                <button type="button" class="btn button further-btn" onclick="$('#register-form2').yiiActiveForm('submitForm');">Перейти к оплате</button>
                             </div>
 
                     </div>

@@ -129,6 +129,7 @@ class SiteController extends Controller
 
     public function actionRegister()
     {
+        echo '<script>alert("Register");</script>';
         $model = new RegisterForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
