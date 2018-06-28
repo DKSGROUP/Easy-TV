@@ -35,13 +35,13 @@ class SiteController extends Controller
                 $box = 1;
                 $months = 1;*/
 
-                $account = $amo->account;
+                /*$account = $amo->account;
 
                 // или прямо
                 $account = Yii::$app->amocrm->account;
 
                 // Вывод информации об аккаунте
-                //print_r($account->apiCurrent());
+                print_r($account->apiCurrent());*/
 
                 // Получение экземпляра модели для работы с контактами
                 $contact = $amo->contact;
