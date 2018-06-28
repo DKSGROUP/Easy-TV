@@ -39,9 +39,10 @@ nav{
     justify-content: flex-end;
 }
 .header{
-    background: #9aa3ae url(../img/header/NEWSE.png) top center no-repeat;
     color: #fff;
-    background-size: cover;
+    height: 680px !important;
+    overflow: hidden;
+    position: relative;
 }
 .navbar a{
     color: #000;
@@ -99,8 +100,41 @@ nav{
     border: #3d7c47;
 }
 
+.backg, .backg1,.backg2,.backg3{
+    height: 680px !important;
+    
+    background-size: cover;
+}
 
+.backg{
+    background: rgba(15, 18, 49, 0.34) url('../img/header/NEWSE.png') center center no-repeat;
+    background-size: cover;
+}
 
+.backg1{
+    background: rgba(15, 18, 49, 0.34) url('../img/header/cat1.jpg') center center no-repeat; 
+    background-size: cover;
+}
+
+.backg2{
+    background: rgba(15, 18, 49, 0.34) url('../img/header/cat2.jpg') center center no-repeat; 
+    background-size: cover;
+
+}
+
+.backg3{
+    background: rgba(15, 18, 49, 0.34) url('../img/header/cat3.jpg') center center no-repeat;
+    background-size: cover;
+
+}
+
+.btn-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 125px;
+}
 .why-we h1{
     font-size: 16px !important;
     line-height: 19px;

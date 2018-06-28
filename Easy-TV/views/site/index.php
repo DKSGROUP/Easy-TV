@@ -629,8 +629,9 @@ function addUser($name, $login, $email, $phone, $address)
 
                             <div class="col-md-12 col-sm-12"
                                  style="text-align: left; font-size: 14px; color: #828282;clear: both; margin-left: 10px;">
-                                <input type="checkbox" class="form-check-input" id="autosubs">
-                                <label class="form-check-label" for="autosubs" style="font-size: 16px;">Автоподписка</label>
+                                <input type="checkbox" class="form-check-input" id="autosubs2">
+                                <label class="form-check-label" for="autosubs2" style="font-size: 16px;">Автоподписка</label>
+
                             </div>
 
 
@@ -944,11 +945,46 @@ function addUser($name, $login, $email, $phone, $address)
 
             </script>
 <!--Head-->
-<div class="header"
-     style="height: 680px; background: rgba(15, 18, 49, 0.34) url('img/header/NEWSE.png') top center no-repeat; background-attachment: fixed; background-size: cover;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
+
+
+
+<div class="header">
+    <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="backg"> 
+               <div class="title-text text-center" style="padding-top: 145px;">
+                    <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
+                    <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
+                        телевидение, которое работает везде, где есть Интернет</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item"> 
+            <div class="backg1">
+                
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="backg2">
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-header">
+        <a href="#price">
+                            <?php
+                            echo Button::widget([
+                                'label' => 'Бесплатный просмотр',
+                                'options' => ['class' => 'btn join wow pulse animated', 'style' => 'margin-top:200px; width: 220px; height: 50px; font-size: 18px; animation-duration: 2s;
+                        animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;']
+                            ]);
+                            ?>
+                        </a>
+    </div>
+                <!--
                 <div class="title-text text-center" style="margin-top: 145px;">
                     <h1>Ваши любимые фильмы и сериалы в любoй точке мира</h1>
                     <p style="margin-top: 15px;">EasyTV — современный ТВ сервис. Мы предлагаем интерактивное цифровое
@@ -962,10 +998,7 @@ function addUser($name, $login, $email, $phone, $address)
                             ?>
                         </a>
                 </div>
-                <img src="img/header/Polygon.png" class="wow animated bounce">
-            </div>
-        </div>
-    </div>
+                <img src="img/header/Polygon.png" class="wow animated bounce">-->
 </div>
 <!--Why we-->
 
