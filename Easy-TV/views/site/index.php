@@ -23,7 +23,7 @@ $this->title = 'Easy-TV';
     $field = $amo->custom_field;
     echo 'FIRST';
     $field->debug(true); // Режим отладки
-    $field['name'] = 'Login';
+    $field['name'] = 'Логин';
     $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
     $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
     $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
@@ -43,7 +43,7 @@ $this->title = 'Easy-TV';
     $field = $amo->custom_field;
     echo 'THIRD';
     $field->debug(true); // Режим отладки
-    $field['name'] = 'Phone';
+    $field['name'] = 'Телефон';
     $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
     $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
     $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
@@ -53,8 +53,18 @@ $this->title = 'Easy-TV';
     $field = $amo->custom_field;
     echo 'FOURTH';
     $field->debug(true); // Режим отладки
-    $field['name'] = 'Address';
+    $field['name'] = 'Адрес';
     $field['type'] = \AmoCRM\Models\CustomField::TYPE_TEXT;
+    $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
+    $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
+    $id = $field->apiAdd();
+    print_r($id);
+
+    $field = $amo->custom_field;
+    echo 'FOURTH';
+    $field->debug(true); // Режим отладки
+    $field['name'] = 'Приставка';
+    $field['type'] = \AmoCRM\Models\CustomField::TYPE_CHECKBOX;
     $field['element_type'] = \AmoCRM\Models\CustomField::ENTITY_CONTACT;
     $field['origin'] = '528d0285c1f9180911159a9dc6f759b3_zendesk_widget';
     $id = $field->apiAdd();
@@ -313,7 +323,7 @@ function addUser($name, $login, $email, $phone, $address)
                     <div class="row justify-content-center" >
                         <div class="col-md-12 col-sm-12 step2">
                             <p class="text-center caption">Шаг 2 из 4: Введите личную информацию</p>
-                            <?php $form = ActiveForm::begin([
+                            <?php $form1 = ActiveForm::begin([
                                 'id' => 'register-form1',
                             ]) ?>
                             <?php $model = new \app\models\RegisterForm(); ?>
@@ -325,27 +335,27 @@ function addUser($name, $login, $email, $phone, $address)
                                             
                                             <div class="col-md-12 col-sm-12">
                                                 <!--input  type="text" class="form-control " required="" placeholder="Фмилия Имя Отчество" width="100%"-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Фамилия Имя Отчество'])->label(false) ?>
+                                                <?= $form1->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Фамилия Имя Отчество'])->label(false) ?>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 <!--input  type="text" class="form-control " required=""
                                                        placeholder="login"-->
-                                                       <?= $form->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>"Login"])->label(false) ?>
+                                                       <?= $form1->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>"Login"])->label(false) ?>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
                                                 <!--input type="text" class="form-control " required=""
                                                        placeholder="email@example.com"-->
-                                                       <?= $form->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control', 'placeholder'=>"email@example.com"])->label(false) ?>
+                                                       <?= $form1->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control', 'placeholder'=>"email@example.com"])->label(false) ?>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12">
                                                 
-                                            <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control','style' => 'min-width = 300%;'])->label(false)->widget(
+                                            <?= $form1->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control','style' => 'min-width = 300%;'])->label(false)->widget(
                                                         PhoneInput::className(), [
                                                     'jsOptions' => [
                                                         'preferredCountries' => ['ru', 'ua'],
@@ -362,7 +372,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
                                                 <!--name - country-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%','id'=>'country', 'class' => 'form-control','placeholder'=>'Страна'])->label(false) ?>
+                                                <?= $form1->field($model, 'name')->textInput(['width' => '100%','id'=>'country', 'class' => 'form-control','placeholder'=>'Страна'])->label(false) ?>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
@@ -371,7 +381,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 col-sm-12">
                                                         <!--name - town-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%','id'=>'town', 'class' => 'form-control','placeholder'=>'Город'])->label(false) ?>
+                                                <?= $form1->field($model, 'name')->textInput(['width' => '100%','id'=>'town', 'class' => 'form-control','placeholder'=>'Город'])->label(false) ?>
                                                     </div>
                                                 </div>
 
@@ -381,7 +391,7 @@ function addUser($name, $login, $email, $phone, $address)
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12 col-sm-12">
                                                         <!--name - index-->
-                                                               <?= $form->field($model, 'name')->textInput(['width' => '100%', 'id'=>'index-t','class' => 'form-control','placeholder'=>'Индекс: хххххх'])->label(false) ?>
+                                                               <?= $form1->field($model, 'name')->textInput(['width' => '100%', 'id'=>'index-t','class' => 'form-control','placeholder'=>'Индекс: хххххх'])->label(false) ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -389,7 +399,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
                                                 <!--addres-->
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','id'=>'street', 'placeholder'=>'Адрес: улица, дом, квартира'])->label(false) ?>
+                                                <?= $form1->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','id'=>'street', 'placeholder'=>'Адрес: улица, дом, квартира'])->label(false) ?>
 
                                             </div>
                                         </div>
@@ -696,9 +706,9 @@ function addUser($name, $login, $email, $phone, $address)
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-sm-10 step2">
                             <p class="text-center caption">Шаг 2 из 3: Введите личную информацию</p>
-                            <?php $form = ActiveForm::begin([
+                            <?php $form2 = ActiveForm::begin([
                                 'id' => 'register-form2',
-                                'action' => ['site/register'],
+                                'action' => ['?r=crm/register'],
                                 'options' => ['method' => 'post']
                             ]) ?>
                             <?php /*$model = new \app\models\RegisterForm();*/ ?>
@@ -708,7 +718,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
-                                                <?= $form->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Фамилия Имя Отчество'])->label(false) ?>
+                                                <?= $form2->field($model, 'name')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>'Фамилия Имя Отчество'])->label(false) ?>
                                                 <!--<input style="width: 100%" type="text" class="form-control " required="" placeholder="">-->
                                             </div>
                                         </div>
@@ -716,7 +726,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
-                                                <?= $form->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>"Login"])->label(false) ?>
+                                                <?= $form2->field($model, 'login')->textInput(['width' => '100%', 'class' => 'form-control','placeholder'=>"Login"])->label(false) ?>
                                                 <!--<input type="text" style="width: 100%" class="form-control " required=""
                                                        placeholder="Login">-->
                                             </div>
@@ -725,7 +735,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
-                                                <?= $form->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control', 'placeholder'=>"email@example.com"])->label(false) ?>
+                                                <?= $form2->field($model, 'email')->textInput(['width' => '100%', 'class' => 'form-control', 'placeholder'=>"email@example.com"])->label(false) ?>
                                                 <!--<input type="text" style="width: 100%" class="form-control " required=""
                                                        placeholder="email@example.com">-->
                                             </div>
@@ -735,7 +745,7 @@ function addUser($name, $login, $email, $phone, $address)
                                         <p>
                                         <div class="row justify-content-center">
                                             <div class="col-md-12 col-sm-12">
-                                                <?= $form->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false)->widget(
+                                                <?= $form2->field($model, 'phone')->textInput(['width' => '100%', 'class' => 'form-control'])->label(false)->widget(
                                                         PhoneInput::className(), [
                                                     'jsOptions' => [
                                                         'preferredCountries' => ['ru', 'ua'],

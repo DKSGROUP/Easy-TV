@@ -16,6 +16,9 @@ class RegisterForm extends Model
     public $email;
     public $phone;
     public $address;
+    public $price;
+    public $box;
+    public $months;
 
 
     /**
@@ -25,42 +28,10 @@ class RegisterForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'login', 'email', 'phone'], 'required'],
+            [['name', 'login', 'email', 'phone', 'price', 'months'], 'required'],
             // email has to be a valid email address
             ['email', 'email'],
-            // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
             ['phone', PhoneInputValidator::className()],
         ];
-    }
-
-    /**
-     * @return array customized attribute labels
-     */
-    public function attributeLabels()
-    {
-        return [
-            'verifyCode' => 'Verification Code',
-        ];
-    }
-
-    /**
-     * Sends an email to the specified email address using the information collected by this model.
-     * @param string $email the target email address
-     * @return bool whether the model passes validation
-     */
-    public function contact($email)
-    {
-        if ($this->validate()) {
-            Yii::$app->mailer->compose()
-                ->setTo($email)
-                ->setFrom([$this->email => $this->name])
-                ->setSubject($this->subject)
-                ->setTextBody($this->body)
-                ->send();
-
-            return true;
-        }
-        return false;
     }
 }
